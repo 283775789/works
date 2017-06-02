@@ -16,7 +16,7 @@
                     <div class="col-xs-4">
                         <div>
                             <table class="m-sliders">
-                                <tr class="xtype">
+                                <tr class="xtype js-type1">
                                     <td>门户网站</td>
                                     <td>
                                         <div class="c-slider jsx-slider" data-value="10" data-link=".js-input1" data-suffix="%">
@@ -265,10 +265,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="m-btnsarea">
+                <a class="u-btn xprimary">保存</a>
+                <a class="u-btn xprimary js-btn1">单个验证</a>
+                <a class="u-btn xprimary js-btn2">全部验证</a>
+            </div>
         </div>
     </div>
     <!-- /主体 -->
     @@include('include/_footer.html')
     @@include('include/_script.html')
+
+    <script>
+        // 演示代码
+        $('.js-btn1').on('click', function () {
+            reui.invalid('所有选项值之和必须等于100%', $('.js-type1'));
+        });
+
+        $('.js-btn2').on('click', function () {
+            reui.error('所有选项值之和必须等于100%');
+        });
+    </script>
 </body>
 </html>

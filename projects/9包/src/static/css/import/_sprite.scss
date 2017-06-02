@@ -4,27 +4,37 @@
   height: 14px;
 }
 .collapsed > .ico-collapse {
-  background-position: -176px -158px;
+  background-position: 0px -200px;
   width: 17px;
   height: 17px;
 }
-a:hover > .ico-nextpage {
-  background-position: -228px -86px;
+.pagination-next.disabled > .ico-nextpage,.ico-nextpage {
+  background-position: -228px -48px;
   width: 6px;
   height: 9px;
 }
-a:hover > .ico-off {
-  background-position: -27px -200px;
-  width: 16px;
-  height: 17px;
+.pagination-prev.disabled > .ico-prevpage,.ico-prevpage {
+  background-position: -228px -105px;
+  width: 6px;
+  height: 9px;
 }
-a:hover > .ico-prevpage {
+a:hover > .ico-nextpage {
   background-position: -228px -67px;
   width: 6px;
   height: 9px;
 }
+a:hover > .ico-off {
+  background-position: -53px -200px;
+  width: 16px;
+  height: 17px;
+}
+a:hover > .ico-prevpage {
+  background-position: -228px -86px;
+  width: 6px;
+  height: 9px;
+}
 a:hover > .ico-pwd {
-  background-position: -203px -158px;
+  background-position: -79px -200px;
   width: 13px;
   height: 16px;
 }
@@ -49,17 +59,17 @@ a:hover > .ico-setting {
   height: 2px;
 }
 .ico-collapse {
-  background-position: 0px -200px;
+  background-position: -176px -158px;
   width: 17px;
   height: 17px;
 }
 .ico-confirm {
-  background-position: 0px -116px;
+  background-position: -42px -116px;
   width: 32px;
   height: 32px;
 }
 .ico-done {
-  background-position: -42px -116px;
+  background-position: -186px 0px;
   width: 32px;
   height: 32px;
 }
@@ -79,52 +89,42 @@ a:hover > .ico-setting {
   height: 22px;
 }
 .ico-draft {
-  background-position: -186px -42px;
+  background-position: -84px -116px;
   width: 32px;
   height: 32px;
 }
 .ico-error {
-  background-position: -186px -84px;
+  background-position: -140px -46px;
   width: 32px;
   height: 32px;
 }
 .ico-hot {
-  background-position: -70px 0px;
-  width: 60px;
-  height: 60px;
-}
-.ico-hot2 {
   background-position: 0px 0px;
   width: 60px;
   height: 60px;
 }
-.ico-nextpage {
-  background-position: -228px -105px;
-  width: 6px;
-  height: 9px;
+.ico-hot2 {
+  background-position: -70px 0px;
+  width: 60px;
+  height: 60px;
 }
 .ico-ng {
-  background-position: -42px -158px;
+  background-position: 0px -116px;
   width: 32px;
   height: 32px;
 }
 .ico-off {
-  background-position: -53px -200px;
+  background-position: -27px -200px;
   width: 16px;
   height: 17px;
 }
 .ico-pass {
-  background-position: -186px 0px;
+  background-position: -42px -158px;
   width: 32px;
   height: 32px;
 }
-.ico-prevpage {
-  background-position: -228px -48px;
-  width: 6px;
-  height: 9px;
-}
 .ico-pwd {
-  background-position: -79px -200px;
+  background-position: -203px -158px;
   width: 13px;
   height: 16px;
 }
@@ -154,7 +154,7 @@ a:hover > .ico-setting {
   height: 14px;
 }
 .ico-success {
-  background-position: -140px -46px;
+  background-position: -126px -116px;
   width: 32px;
   height: 32px;
 }
@@ -169,12 +169,12 @@ a:hover > .ico-setting {
   height: 13px;
 }
 .ico-wait {
-  background-position: -126px -116px;
+  background-position: -186px -84px;
   width: 32px;
   height: 32px;
 }
 .ico-warning {
-  background-position: -84px -116px;
+  background-position: -186px -42px;
   width: 32px;
   height: 32px;
 }

@@ -160,8 +160,9 @@ input[type="checkbox"] { width:15px; height:15px; }
 .pagination-goto { display:inline-block; vertical-align:middle; }
 .pagination-body a { min-width:37px; margin-left:-1px; line-height:35px; }
 .pagination-prev > .ico { margin-right:5px; margin-top:-2px; }
-.pagination-prev.disabled:hover { color:#333; border-color:#ededed; cursor:not-allowed; }
 .pagination-next > .ico { margin-left:5px; margin-top:-3px; }
+.pagination-prev.disabled:hover,
+.pagination-next.disabled:hover { color:#333; border-color:#ededed; cursor:not-allowed; }
 .pagination-nums { margin-left:4px; }
 .pagination-nums:after { content:" "; display:table; clear:both; }
 .pagination-nums > a { float:left; }
@@ -180,8 +181,9 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-filter > li { padding:6px 0; font-size:0; }
 .m-filter > li:after { content:" "; display:table; clear:both; }
 .m-filter > li > label { float:left; margin-right:20px; }
-.m-filter > li label { width:70px; margin-top:3px; color:#808080; text-align:right; word-spacing:.75em; white-space:nowrap; }
+.m-filter > li label { width:70px; color:#808080; text-align:right; word-spacing:.75em; white-space:nowrap; }
 .m-filter > li label > .ico { margin-right:5px; }
+.m-filter > li label.xlarge { line-height:36px; margin-top:3px; }
 .m-filter > li > label,
 .filter-option { font-size: 14px; vertical-align: middle; }
 .filter-option { display: table-cell; width:10000px; }
@@ -344,7 +346,10 @@ input[type="checkbox"] { width:15px; height:15px; }
 }
 
 /* 底部按钮区 */
-.m-fixer { position:absolute; bottom:0; left:0; width:100%; padding:20px 0; background:#fff; background:rgba(255,255,255,.6); border-top:1px solid #ccc; text-align:center; }
+.m-fixer,
+.m-btnsarea {  padding:20px 0; background:#fff; background:rgba(255,255,255,.6); border-top:1px solid #ccc; text-align:center; }
+.m-fixer { position:absolute; bottom:0; left:0; width:100%; }
+.g-box .m-btnsarea { margin:0 -30px -10px; padding-bottom:0; }
 
 /* 二级导航 */
 .m-subnav > a { display:inline-block; padding-bottom:13px; font-size: 16px; color: #808080; border-bottom:2px solid transparent; }
@@ -390,7 +395,6 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-sliders tr.xlike .slider-handle { border-color:#f95a7b; }
 
 /* 权重容器 */
-.m-weight { margin-bottom:-30px; }
 .m-weight { padding-top:20px; border-top:1px dashed #cbd8e4; }
 .m-weight > .row > div { margin-bottom:30px; }
 .m-weight > .row > div > div { position:relative; height:285px;  background:#fff; border: 4px solid #e6f0f5; }
@@ -834,6 +838,9 @@ table .ico { margin-left:5px; }
 .m-win .m-table th { padding:8px; }
 .m-win .m-tablebox { max-width:none; max-height:500px; overflow-y:auto; }
 
+/* 垂直滚动容器 */
+.m-yscroll { max-height:300px; overflow-y:auto; }
+.m-form .m-yscroll { max-height:200px; border:1px solid #b2c1d0; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */

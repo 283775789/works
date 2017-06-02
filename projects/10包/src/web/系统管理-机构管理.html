@@ -14,11 +14,11 @@
             <form>
                 <ul class="m-filter">
                     <li>
-                        <label>名称：</label>
+                        <label class="xlarge">名称：</label>
                         <div class="filter-option">
                             <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
                             <button class="u-btn xprimary" type="submit">查看</button>
-                            <a class="u-btn xlesser">新增机构</a>
+                            <a class="u-btn xlesser jsx-openwin" data-target="#win-add">新增机构</a>
                             <a class="u-btn xlesser">批量删除</a>
                         </div>
                     </li>
@@ -768,7 +768,142 @@
         </div>
     </div>
     <!-- /主体 -->
+
+    <!-- 窗体：新增机构 -->
+    <div class="m-win jsx-win" id="win-add">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>新增机构</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-form xlarge xnomargin">
+                <div>
+                    <label style="width:6em;"><b>*</b>机构名称：</label>
+                    <div><input type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>机构编码：</label>
+                    <div><input type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>上级机构：</label>
+                    <div>
+                        <div class="m-yscroll">
+                            <!-- 目录树 -->
+                            <ul id="tree" class="ztree"></ul>
+                            <!-- /目录树 -->
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label><b>*</b>网站帐号：</label>
+                    <div><input type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>微博账号：</label>
+                    <div><input type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>微信账号：</label>
+                    <div><input type="text" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="win-footer">
+            <a class="u-btn xprimary js-win-close">保存</a>
+            <a class="u-btn xlesser js-win-close">取消</a>
+        </div>
+    </div>
+    <!-- /窗体：新增机构 -->
+
     @@include('include/_footer.html')
     @@include('include/_script.html')
+    <!-- 脚本 -->
+    <script>
+        //设置目录树
+        var setting = {
+            check: {
+                enable: true
+            },
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            view: {
+                showIcon: true,
+                expandSpeed: ""
+            }
+        };
+
+        var setting2 = {
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            },
+            view: {
+                showIcon: true,
+                expandSpeed: ""
+            }
+        };
+
+        //添加目录树节点
+        var zNodes = [
+            {
+                id: 11,
+                pId: 1,
+                name: "机构1",
+                open: true
+            },
+            {
+                id: 12,
+                pId: 1,
+                name: "机构2",
+                open: true
+            },
+            {
+                id: 121,
+                pId: 12,
+                name: "机构2-1",
+                open: true
+            },
+            {
+                id: 13,
+                pId: 1,
+                name: "机构3",
+                open: true
+            },
+            {
+                id: 131,
+                pId: 13,
+                name: "机构-1",
+                open: true
+            }
+        ];
+
+        $(document).ready(function() {
+            //初始化目录树
+            var $tree = $.fn.zTree.init($("#tree"), setting, zNodes),
+                $tree2 = $.fn.zTree.init($("#tree2"), setting2, zNodes),
+                nodes = $tree.getNodes(),
+                nodes2 = $tree2.getNodes();
+
+            $tree.expandAll(false);
+            if (nodes.length > 0) {
+                for (var i = 0; i < nodes.length; i++) {
+                    $tree.expandNode(nodes[i], true, false, true);
+                }
+            }
+
+            $tree2.expandAll(false);
+            if (nodes2.length > 0) {
+                for (i = 0; i < nodes.length; i++) {
+                    $tree2.expandNode(nodes2[i], true, false, true);
+                }
+            }
+        });
+    </script>
+    <!-- /脚本 -->
 </body>
 </html>
