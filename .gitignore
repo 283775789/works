@@ -1,0 +1,8 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# folder:
+projects/*/dist/
+node_modules/
