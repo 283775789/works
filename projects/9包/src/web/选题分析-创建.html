@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"配置"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var6":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box hasfixer">
+            <div class="m-title">
+                <h4>选题分析</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-subtitle">HTML修正规则</div>
+
+            <div class="m-cells xbs xhasbg">
+                <div class="cells-col xbs-avgw">
+                    <div class="m-form xgray">
+                        <div>
+                            <label style="width:9em;"><b>*</b>选题分类：</label>
+                            <div>
+                                <select>
+                                    <option>请选择选题类型</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>营销分类：</label>
+                            <div>
+                                <select>
+                                    <option>请选择营销类型</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>策划实施周期：</label>
+                            <div>
+                                <select>
+                                    <option>请选择周期</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-form xbd xgray">
+                        <div>
+                            <label style="width:9em;">审批人：</label>
+                            <div>
+                                <select style="width:224px;">
+                                    <option>请选择审批人</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-form xgray xfull">
+                        <div>
+                            <label style="width:9em;"><b>*</b>系列名称：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>选题名称：</label>
+                            <div class="xfull"><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>概要：</label>
+                            <div class="xfull"><textarea style="height:150px;"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="text-center" style="padding-left:9em; margin:30px 0;">
+                        <a class="u-btn xprimary">提交审核</a>
+                        <a class="u-btn xlesser">保存</a>
+                        <a class="u-btn xlesser">取消</a>
+                    </div>
+                </div>
+                <div class="cells-col">
+                    <div class="m-filter3">
+                        <input class="w-form5" type="text" placeholder="请输入关键词进行检索" />
+                        <select class="w-form3">
+                            <option>请选择时间</option>
+                        </select>
+                        <a class="u-btn xprimary">分析</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a class="u-link xhuge xcolor1">
+                                <span>
+                                    <span>相似选题</span>
+                                    <var>456888</var>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a class="u-link xhuge xcolor2">
+                                <span>
+                                    <span>相似图书</span>
+                                    <var>456888</var>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall" style="margin-top:10px;">
+                        <div class="m-subtitle">
+                            <span>图书定价</span>
+                        </div>
+
+                        <div>
+                            <div class="t-lightgray">2016年9月，本版书在网店渠道的平均销量为52.03册，环比上升11.10册，同比上升8.70册。</div>
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart13.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>市场规模</span>
+                            <div class="subtitle-right">
+                                <div class="m-txttab jsx-tabnav">
+                                    <a data-target="#tab-ls">零售</a>
+                                    <a data-target="#tab-std">实体店</a>
+                                    <a data-target="#tab-wd">网店</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-tabs">
+                            <div class="tab-pane active" id="tab-ls">
+                                <div class="m-chartbox xmt">
+                                    <img src="../static/images/demo/chart13.png" />
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-std">
+                                零售
+                            </div>
+                            <div class="tab-pane" id="tab-wd">
+                                网店
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>市场规模</span>
+                            <div class="subtitle-right">
+                                <div class="m-txttab jsx-tabnav">
+                                    <a data-target="#tab-m3">上市3个月</a>
+                                    <a data-target="#tab-m6">上市6月</a>
+                                    <a data-target="#tab-m12">上市1年</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-tabs">
+                            <div class="tab-pane active" id="tab-m3">
+                                <div class="m-chartbox xmt">
+                                    <img src="../static/images/demo/chart13.png" />
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-m6">
+                                上市6月
+                            </div>
+                            <div class="tab-pane" id="tab-m12">
+                                上市1年
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>读者评论分析</span>
+                        </div>
+
+                        <div>
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart13.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>读者购买方式</span>
+                        </div>
+
+                        <div>
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart26.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>读者主要分区域</span>
+                        </div>
+
+                        <div>
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart15.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

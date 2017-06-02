@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"采集分析"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box hasfixer">
+            <div class="m-title">
+                <h4>创建选题</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-subtitle">选题报告</div>
+
+            <div class="m-cells xbs xhasbg">
+                <div class="cells-col xbs-avgw">
+                    <div class="m-form xgray xfull">
+                        <div>
+                            <label style="width:10em;"><b>*</b>名称：</label>
+                            <div><input type="text" placeholder="请输入系列名称" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>类型：</label>
+                            <div>
+                                <select style="width:240px;">
+                                    <option>请选择营销类型</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>内容：</label>
+                            <div><textarea style="height:100px;"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="m-form xbd xgray">
+                        <div>
+                            <label style="width:10em;">选题安排：</label>
+                            <div>
+                                <select>
+                                    <option>请选择审批人</option>
+                                </select>
+                            </div>
+                            <label style="width:5em;">审批人：</label>
+                            <div>
+                                <select>
+                                    <option>请选择审批人</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-form xgray xfull">
+                        <div>
+                            <label style="width:10em;"><b>*</b>栏目安排：</label>
+                            <div>
+                                <select style="width:240px;">
+                                    <option>请选择营销类型</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>报道角度：</label>
+                            <div><textarea style="height:100px;" placeholder="请输入内容"></textarea></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>报道形式：</label>
+                            <div>
+                                <label><input type="radio" name="r-type" />图文</label>
+                                <label><input type="radio" name="r-type" />文字</label>
+                                <label><input type="radio" name="r-type" />视频</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>字数：</label>
+                            <div><input type="text" placeholder="请输入字数" /></div>
+                        </div>
+                    </div>
+                    <div class="m-form xgray xfull">
+                        <div>
+                            <label style="width:10em;"><b>*</b>选题重要性阐述：</label>
+                            <div><textarea style="height:260px;" placeholder="请输入内容"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin:30px 0;">
+                        <a class="u-btn xprimary">提交审核</a>
+                        <a class="u-btn xlesser">保存</a>
+                        <a class="u-btn xlesser">取消</a>
+                    </div>
+                </div>
+                <div class="cells-col">
+                    <div class="m-filter3">
+                        <input class="w-form5" type="text" placeholder="请输入关键词进行检索" />
+                        <select class="w-form3">
+                            <option>请选择时间</option>
+                        </select>
+                        <a class="u-btn xprimary">分析</a>
+                    </div>
+
+                    <div class="m-cells xsummary xwhite">
+                        <div>
+                            <div class="xsummary-item xcolor1">
+                                <h4>相关报道量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor2">
+                                <h4>阅读量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor3">
+                                <h4>评论量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor4">
+                                <h4>点赞量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor5">
+                                <h4>转载量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="m-card xsmall" style="margin-top:10px;">
+                        <div class="m-subtitle">
+                            <span>热度趋势</span>
+                        </div>
+
+                        <div class="m-chartbox xmt">
+                            <img src="../static/images/demo/chart6.png" />
+                        </div>
+                    </div>
+
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>媒体分布</span>
+                        </div>
+
+                        <div class="m-chartbox xmt">
+                            <img src="../static/images/demo/chart7.png" />
+                        </div>
+                    </div>
+
+                    <div class="m-card xsmall">
+                        <div class="m-subtitle">
+                            <span>读者评论分析</span>
+                        </div>
+
+                        <div class="m-chartbox xmt">
+                            <img src="../static/images/demo/chart8.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

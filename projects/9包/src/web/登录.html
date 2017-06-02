@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"登录"})
+<body class="p-login">
+    <div class="login-inner">
+        <div class="login-box">
+            <div class="login-logo">
+                <img src="../static/images/logo.png" />
+                <div class="login-logo-right">
+                    <h3>国家数字复合出版系统工程</h3>
+                    <h4>图书选题及发行分析系统</h4>
+                </div>
+            </div>
+
+            <form>
+                <div class="m-form">
+                    <div>
+                        <label style="width:5em;">用户名</label>
+                        <div><input type="text" /></div>
+                    </div>
+                    <div>
+                        <label>密码</label>
+                        <div>
+                            <input type="password" />
+                            <a class="ico ico-password js-password"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <label>验证码</label>
+                        <div>
+                            <input type="text" style="width:100px;" />
+                            <img class="login-vcode" src="../static/images/demo/vcode.png" />
+                            <a class="login-vlink">看不清？换一张</a>
+                        </div>
+                    </div>
+                    <div>
+                        <label></label>
+                        <div>
+                            <label><input type="checkbox" />记住帐号与密码</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label></label>
+                        <div>
+                            <div class="form-error"><i class="ico ico-err"></i>报错提示：用户名或密码不对</div>
+                            <button class="u-btn xprimary">登 录</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+    <script>
+        $('.js-password').click(function () {
+            var $this = $(this);
+            var $pwdInput = $this.prev();
+            $this.toggleClass('noshow');
+
+            if ($this.hasClass('noshow')) {
+                $pwdInput.attr({type:'text'});
+            } else {
+                $pwdInput.attr({ type: 'password' });
+            }
+        });
+    </script>
+</body>
+</html>

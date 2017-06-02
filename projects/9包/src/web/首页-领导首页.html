@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"首页"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var1":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="m-filter2">
+            <label>书目类别:</label>
+            <select>
+                <option>全部</option>
+                <option>文学</option>
+            </select>
+            <a class="u-btn xprimary">查看</a>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-8">
+                <!-- 销售情况 -->
+                <div class="g-box xsmp">
+                    <div class="m-title xnoborder">
+                        <h4>销售情况</h4>
+                        <div class="title-right">
+                            <div class="m-txttab jsx-tabnav">
+                                <a class="active" data-target="#tab-zt">总体销售趋势</a>
+                                <a data-target="#tab-ds">电商销售占比</a>
+                            </div>
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-tabs">
+                        <div class="tab-pane active" id="tab-zt">
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart23.png" />
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-ds">
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart24.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /销售情况 -->
+
+                <!-- 立体市场分析 -->
+                <div class="g-box xsmp">
+                    <div class="m-title xnoborder">
+                        <h4>立体市场分析</h4>
+                        <div class="title-right">
+                            <div class="m-txttab jsx-tabnav">
+                                <a>按时间</a>
+                                <a>按地域</a>
+                                <a>按省份</a>
+                            </div>
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox xmt">
+                        <img src="../static/images/demo/chart25.png" />
+                    </div>
+                </div>
+                <!-- /立体市场分析 -->
+
+                <!-- 销售渠道分析 -->
+                <div class="g-box xsmp">
+                    <div class="m-title xnoborder">
+                        <h4>销售渠道分析</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartnote">
+                        <div>文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</div>
+                    </div>
+
+                    <div class="m-cells">
+                        <div class="cells-col" style="width:40%;">
+                            <h4 class="u-charttitle">销售量占比</h4>
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart26.png" />
+                            </div>
+                        </div>
+                        <div class="cells-col">
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart27.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /销售渠道分析 -->
+
+                <!-- 书评占比 -->
+                <div class="g-box xsmp">
+                    <div class="m-title xnoborder">
+                        <h4>书评占比</h4>
+                    </div>
+
+                    <div class="m-chartnote">
+                        <div>2016年，1-8月该选题类似图书在各大媒体平台的书评总量为xyz，每本图书书评占比如图所示。</div>
+                    </div>
+
+                    <div class="m-cells">
+                        <div class="cells-col" style="width:40%;">
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart28.png" />
+                            </div>
+                        </div>
+                        <div class="cells-col">
+                            <div class="m-chartbox xmt">
+                                <img src="../static/images/demo/chart29.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /书评占比 -->
+            </div>
+
+            <div class="col-xs-4">
+                <!-- 工作任务 -->
+                <div class="m-card xsmpb">
+                    <div class="m-title xnoborder">
+                        <h4>工作任务</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-cells xtask">
+                        <a class="cells-col" data-num="3">
+                            <i class="ico ico-wait"></i>
+                            <div>未审核</div>
+                        </a>
+                        <a class="cells-col">
+                            <i class="ico ico-pass"></i>
+                            <div>已审核</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /工作任务 -->
+                
+                <!-- 定向关注 -->
+                <div class="m-card xsmpb">
+                    <div class="m-title xnoborder">
+                        <h4>定向关注</h4>
+                    </div>
+
+                    <div class="m-cells xsummary xsmall">
+                        <div>
+                            <div class="xsummary-item">
+                                <h4>我的热点</h4>
+                                <div class="xcolor1">123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item">
+                                <h4>我的图书</h4>
+                                <div class="xcolor2">123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item">
+                                <h4>我的作者</h4>
+                                <div class="xcolor3">123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item">
+                                <h4>特别关注</h4>
+                                <div class="xcolor4">123</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /定向关注 -->
+
+                <!-- 热点话题 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder">
+                        <h4>热点话题</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <table class="m-sorttable xtspace">
+                        <tr>
+                            <th style="width:50px;">排行</th>
+                            <th>热点</th>
+                            <th style="width:40px;">指数</th>
+                            <th style="width:50px;">趋势</th>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">1</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">2</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">3</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-avg"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">4</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-avg"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">3</span></td>
+                            <td><a>空难历险</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /热点话题 -->
+
+                <!-- 本社畅销书 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>本社畅销书</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <table class="m-sorttable xtspace">
+                        <tr>
+                            <th style="width:50px;">排名</th>
+                            <th style="width:25%;">图书名称</th>
+                            <th>书评标题</th>
+                            <th style="width:50px;">指数</th>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">1</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">2</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">3</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">4</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">10</span></td>
+                            <td>图书A</td>
+                            <td>《我死过，我幸存，我作证》</td>
+                            <td>1.1</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /本社畅销书 -->
+
+                <!-- 热门作者 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder">
+                        <h4>热门作者</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <table class="m-sorttable xtspace">
+                        <tr>
+                            <th style="width:50px;">排行</th>
+                            <th>作者</th>
+                            <th style="width:20%;">指数</th>
+                            <th style="width:50px;">趋势</th>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">1</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">2</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num xtop">3</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">4</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">10</span></td>
+                            <td>路遥</td>
+                            <td>1.1</td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /热门作者 -->
+            </div>
+        </div>
+
+        <div class="m-affix">
+            <a>创建<br />选题</a>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

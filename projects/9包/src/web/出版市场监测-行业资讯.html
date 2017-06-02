@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"机构管理"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var7":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box xsmp">
+            <div class="m-title">
+                <h4>出版资讯</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <div class="filter-option">
+                            <label>时间：</label>
+                            <div class="c-date w-form2"><input class="js-datepicker" type="text"></div>
+                            <label>至：</label>
+                            <div class="c-date w-form2"><input class="js-datepicker" type="text"></div>
+                            <label>关键词：</label>
+                            <input class="w-form5" type="text" placeholder="请输入关键词" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div>
+            <ul class="nav nav-tabs m-tab-top">
+                <li class="active"><a href="#tab-bszx" data-toggle="tab">本社资讯</a></li>
+                <li><a href="#tab-hyzx" data-toggle="tab">行业资讯</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active in" id="tab-bszx">
+                    <!-- 门户·媒体 -->
+                    <div class="g-box xsmp">
+                        <div class="m-subtitle xsolid">
+                            <span>门户·媒体</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+
+                        <div class="m-cells xlr">
+                            <div class="cells-col xlr-left">
+                                <table class="m-sorttable xtspace">
+                                    <tr>
+                                        <th style="width:50px;">排行</th>
+                                        <th style="width:10%;">热度</th>
+                                        <th>标题</th>
+                                        <th style="width:15%;">信息来源</th>
+                                        <th style="width:15%;">发布时间</th>
+                                        <th style="width:15%;">趋势</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">1</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">2</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">3</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">4</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">5</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">6</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">7</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">8</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">9</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">10</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-web">趋势图</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="cells-col">
+                                <div class="m-hots2">
+                                    <a class="xwx2 xcolor1"><span>人民代表习近平</span></a>
+                                    <a class="xwx2 xcolor2"><span>习近平治国理政这四年</span></a>
+                                    <a class="xcolor1"><span>中国迎来“两会时间”</span></a>
+                                    <a class="xcolor1"><span>卫龙辣条宣布从乐天下架</span></a>
+                                    <a class="xcolor2"><span>山东济南推养犬分制</span></a>
+                                    <a class="xcolor1"><span>"黑中介"迎最严整治</span></a>
+                                    <a class="xcolor2"><span>人社部回应民生六问</span></a>
+                                    <a class="xcolor1"><span>特困省养老金收不抵支</span></a>
+                                    <a class="xcolor1"><span>政协委员建议缩短学制</span></a>
+                                    <a class="xcolor2"><span>普京现身大学生冬运会</span></a>
+                                    <a class="xwx2 xcolor1"><span>人民代表习近平</span></a>
+                                    <a class="xwx2 xcolor2"><span>习近平治国理政这四年</span></a>
+                                    <a class="xcolor1"><span>中国迎来“两会时间”</span></a>
+                                    <a class="xcolor1"><span>卫龙辣条宣布从乐天下架</span></a>
+                                    <a class="xcolor2"><span>山东济南推养犬分制</span></a>
+                                    <a class="xcolor1"><span>"黑中介"迎最严整治</span></a>
+                                    <a class="xcolor2"><span>人社部回应民生六问</span></a>
+                                    <a class="xcolor1"><span>特困省养老金收不抵支</span></a>
+                                    <a class="xcolor1"><span>政协委员建议缩短学制</span></a>
+                                    <a class="xcolor2"><span>普京现身大学生冬运会</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 门户·媒体 -->
+
+                    <!-- 微博 -->
+                    <div class="g-box xxsmp">
+                        <div class="m-subtitle xsolid">
+                            <span>微博</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+
+                        <div class="m-cells xlr">
+                            <div class="cells-col xlr-left">
+                                <table class="m-sorttable xtspace">
+                                    <tr>
+                                        <th style="width:50px;">排序</th>
+                                        <th style="width:13%;">热度</th>
+                                        <th style="width:15%;">发布人</th>
+                                        <th>微博内容</th>
+                                        <th style="width:15%;">发布时间</th>
+                                        <th style="width:13%;">趋势</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">1</span></td>
+                                        <td>7.11</td>
+                                        <td>愚-言</td>
+                                        <td><a>最喜XXX出版社的书啦，包装很精美</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">2</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>白鹿原</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">3</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>孤独小说家</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">4</span></td>
+                                        <td>7.11</td>
+                                        <td>网易新闻</td>
+                                        <td><a>文案大师进阶指南（共四册）</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">5</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a></a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">6</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>这世间所有的纸短情长</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">7</span></td>
+                                        <td>7.11</td>
+                                        <td>网易新闻</td>
+                                        <td><a></a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">8</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>刻意练习：如何从新手到大师</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">9</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>当呼吸化为空气</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">10</span></td>
+                                        <td>7.11</td>
+                                        <td>人民网</td>
+                                        <td><a>四川《巴中乡土文化丛书》传承巴人历史文化浓香飘溢</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a class="jsx-openwin" data-target="#win-wb">趋势图</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="cells-col">
+                                <div class="m-dashtab jsx-tabnav">
+                                    <a class="active" data-target="#tab-ztqs">总体趋势</a>
+                                    <a data-target="#tab-hyd">发布人活跃度</a>
+                                    <a data-target="#tab-fssl">粉丝数量</a>
+                                </div>
+
+                                <div class="m-tabs">
+                                    <div class="tab-pane active" id="tab-ztqs">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart7.png" />
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-hyd">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart8.png" />
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-fssl">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart9.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 微博 -->
+
+                    <!-- 微信 -->
+                    <div class="g-box xxsmp">
+                        <div class="m-subtitle xsolid">
+                            <span>微信</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+
+                        <div class="m-cells xlr">
+                            <div class="cells-col xlr-left">
+                                <table class="m-sorttable xtspace">
+                                    <tr>
+                                        <th style="width:50px;">排序</th>
+                                        <th style="width:13%;">热度</th>
+                                        <th style="width:15%;">消息来源</th>
+                                        <th>微信标题</th>
+                                        <th style="width:15%;">发布时间</th>
+                                        <th style="width:13%;">趋势</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">1</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>美国白人冒充华裔投稿，作品成功入选全美最佳诗歌</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">2</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>美如画，美如记忆中的一首蒹葭</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">3</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>岁月啊，你真是两把杀猪刀</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">4</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>文案大师进阶指南（共四册）</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">5</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a></a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">6</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>这世间所有的纸短情长</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">7</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>云南省宁蒗县小凉山简介及小凉山诗群诗歌选读</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">8</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>云南省宁蒗县小凉山简介及小凉山诗群诗歌选读</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">9</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>当呼吸化为空气</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">10</span></td>
+                                        <td>7.11</td>
+                                        <td>诗歌报</td>
+                                        <td><a>云南省宁蒗县小凉山简介及小凉山诗群诗歌选读</a></td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="cells-col">
+                                <div class="m-dashtab jsx-tabnav">
+                                    <a class="active" data-target="#tab-ztqs">总体趋势</a>
+                                    <a data-target="#tab-hyd">发布人活跃度</a>
+                                    <a data-target="#tab-fssl">粉丝数量</a>
+                                </div>
+
+                                <div class="m-tabs">
+                                    <div class="tab-pane active" id="tab-ztqs">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart7.png" />
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-hyd">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart8.png" />
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-fssl">
+                                        <div class="m-chartbox h-box3">
+                                            <img src="../static/images/demo/chart9.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 微信 -->
+
+                    <!-- 行业政策 -->
+                    <div class="g-box xmdp">
+                        <div class="m-subtitle xsolid">
+                            <span>行业政策</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+
+                        <table class="m-sorttable xtspace">
+                            <tr>
+                                <th style="width:50px;">排序</th>
+                                <th>出版产业资讯</th>
+                                <th class="xsort" style="width:12%;">关注热度<i class="ico ico-sort"></i></th>
+                                <th style="width:15%;">消息来源</th>
+                                <th class="xsort" style="width:15%;">发布时间<i class="ico ico-sort"></i></th>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num xtop">1</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>网易新闻</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num xtop">2</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>人民网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num xtop">3</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">4</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">5</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">6</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">7</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">8</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">9</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                            <tr>
+                                <td><span class="u-num">10</span></td>
+                                <td><a>国家新闻出版广电总局（国家版权局）主要职责介绍</a></td>
+                                <td>7.11</td>
+                                <td>中国山东网</td>
+                                <td>2015-07-26</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- 行业政策 -->
+
+                    <!-- 国际市场动态 -->
+                    <div class="g-box xsmp">
+                        <div class="m-subtitle xsolid">
+                            <span>国际市场动态</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+
+                        <div class="m-cells xlr">
+                            <div class="cells-col xlr-left">
+                                <table class="m-sorttable xtspace">
+                                    <tr>
+                                        <th style="width:50px;">排行</th>
+                                        <th style="width:10%;">热度</th>
+                                        <th>标题</th>
+                                        <th style="width:15%;">信息来源</th>
+                                        <th style="width:15%;">发布时间</th>
+                                        <th style="width:10%;">趋势</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">1</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">2</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num xtop">3</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">4</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">5</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">6</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">7</span></td>
+                                        <td>7.11</td>
+                                        <td><a>北岳文艺出版社:书博会上将推出</a></td>
+                                        <td>网易新闻</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">8</span></td>
+                                        <td>7.11</td>
+                                        <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">9</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="u-num">10</span></td>
+                                        <td>7.11</td>
+                                        <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                        <td>人民网</td>
+                                        <td>2015-07-26</td>
+                                        <td><a>趋势图</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="cells-col">
+                                <div class="m-hots2">
+                                    <a class="xwx2 xcolor1"><span>人民代表习近平</span></a>
+                                    <a class="xwx2 xcolor2"><span>习近平治国理政这四年</span></a>
+                                    <a class="xcolor1"><span>中国迎来“两会时间”</span></a>
+                                    <a class="xcolor1"><span>卫龙辣条宣布从乐天下架</span></a>
+                                    <a class="xcolor2"><span>山东济南推养犬分制</span></a>
+                                    <a class="xcolor1"><span>"黑中介"迎最严整治</span></a>
+                                    <a class="xcolor2"><span>人社部回应民生六问</span></a>
+                                    <a class="xcolor1"><span>特困省养老金收不抵支</span></a>
+                                    <a class="xcolor1"><span>政协委员建议缩短学制</span></a>
+                                    <a class="xcolor2"><span>普京现身大学生冬运会</span></a>
+                                    <a class="xwx2 xcolor1"><span>人民代表习近平</span></a>
+                                    <a class="xwx2 xcolor2"><span>习近平治国理政这四年</span></a>
+                                    <a class="xcolor1"><span>中国迎来“两会时间”</span></a>
+                                    <a class="xcolor1"><span>卫龙辣条宣布从乐天下架</span></a>
+                                    <a class="xcolor2"><span>山东济南推养犬分制</span></a>
+                                    <a class="xcolor1"><span>"黑中介"迎最严整治</span></a>
+                                    <a class="xcolor2"><span>人社部回应民生六问</span></a>
+                                    <a class="xcolor1"><span>特困省养老金收不抵支</span></a>
+                                    <a class="xcolor1"><span>政协委员建议缩短学制</span></a>
+                                    <a class="xcolor2"><span>普京现身大学生冬运会</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /国际市场动态 -->
+                </div>
+
+                <div class="tab-pane" id="tab-hyzx">
+                    <div class="g-box">
+                        <div class="m-subtitle">
+                            <span>tab2</span>
+                            <div class="subtitle-right">
+                                <a>更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+
+    <!-- 窗体:门户网站趋势图 -->
+    <div class="m-win nofooter jsx-win" id="win-web">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>单条新闻不同时间段热度指数变化趋势</h4>
+        </div>
+        <div class="win-body w-win4">
+            <div class="m-hotword">
+                <img src="../static/images/demo/chart6.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /窗体:门户网站趋势图 -->
+
+    <!-- 窗体:微博趋势图 -->
+    <div class="m-win nofooter jsx-win" id="win-wb">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>单条新闻不同时间段热度指数变化趋势</h4>
+        </div>
+        <div class="win-body w-win4">
+            <p>【中国萤火虫正面临灭绝 被拉到城市可能活不过3天[伤心]】去年一年，萤火虫展在全国20多个省市举办了100多场。这些展览使用的萤火虫从数万到数十万只不等。一场展览就是一场浩劫，3天内萤火虫的死亡率是60％。10年前的学术会议上，专家就已达成共识：中国萤火虫正面临灭绝的危险。<a>全文:http://weibo.com/ttarticle/p/show</a></p>
+            <div class="m-hotword">
+                <img src="../static/images/demo/chart6.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /窗体:微博趋势图 -->
+
+</body>
+</html>

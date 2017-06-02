@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>选题分析</title>
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/lib/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../static/lib/ztree/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+        <script src="../static/lib/html5shiv.min.js"></script>
+        <script src="../static/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 头部 -->
+	<div class="g-header">
+        <div class="container">
+            <div class="header-left">
+                <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
+            </div>
+            <div class="header-right">
+                <a><i class="ico ico-setting"></i>个性化设置</a>
+                <a><i class="ico ico-pwd"></i>密码修改</a>
+                <a class="header-avatar"><img src="../static/images/demo/avatar.png" />六六</a>
+                <a><i class="ico ico-off"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /头部 -->
+    
+    <!-- 导航 -->
+	<div class="g-nav">
+        <div class="container">
+            <ul class="nav-body">
+                <li><a href="首页.html">首页</a></li>
+                <li><a>热点推荐</a></li>
+                <li><a>区域热点</a></li>
+                <li class="active"><a>选题分析</a></li>
+                <li><a>报社整体分析</a></li>
+                <li><a>信息检索</a></li>
+                <li><a>我的关注</a></li>
+                <li><a href="数据采集-门户网站.html">数据分析</a></li>
+                <li><a href="系统管理-机构管理.html">系统管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /导航 -->
+
+
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>选题分析列表</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <label>类别：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>财经</a>
+                            <a>军事</a>
+                            <a>科技</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>栏目：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>头版</a>
+                            <a>综合版</a>
+                            <a>财经版</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>时间：</label>
+                        <div class="filter-option">
+                            <a class="selected">近一天</a>
+                            <a>近三天</a>
+                            <a>近七天</a>
+                            <a>近三十天</a>
+                            <a>指定日期</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label></label>
+                        <div class="filter-option">
+                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                            <a class="u-btn xlesser">创建选题</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th>选题名称</th>
+                            <th style="width:100px;">类型</th>
+                            <th style="width:20%;">关键词</th>
+                            <th style="width:180px;">创建时间</th>
+                            <th style="width:60px;">状态</th>
+                            <th style="width:160px;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>草稿</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>待审核</td>
+                            <td>
+                                <a>查看</a>
+                                <a>恢复</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>省委常委松原书记付长江三角推进交流合作</td>
+                            <td>经济</td>
+                            <td>经济、北京、财经</td>
+                            <td>2017-02-23 09:23:21</td>
+                            <td>已通过</td>
+                            <td>
+                                <a>修改</a>
+                                <a>提交</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+    <!-- 分页 -->
+    <div class="m-pagination">
+        <div class="pagination-body">
+            <a class="pagination-prev disabled"><i class="ico ico-prevpage"></i>上一页</a>
+            <div class="pagination-nums">
+                <a class="active">1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a>5</a>
+                <i></i>
+            </div>
+            <a class="pagination-next">下一页<i class="ico ico-nextpage"></i></a>
+        </div>
+        <div class="pagination-goto">
+            <span>每页10条，共15页，到第</span>
+            <input type="text" />
+            <span>页</span>
+            <a class="pagination-btn">确定</a>
+        </div>
+    </div>
+    <!-- /分页 -->
+        </div>
+    </div>
+    <!-- /主体 -->
+    
+    <!-- 页脚 -->
+    <div class="g-footer">
+        <div>
+            <span>国家新闻出版广电总局新闻出版重大科技工程项目领导小组办公室 主办</span>
+            <span>地址：北京市宣武门外大街40号</span>
+        </div>
+        <div>
+            <span>2015-2018 >国家新闻出版广电总局 版权所有</span>
+            <span>京ICP备06034703号 文保网备案号1101020012</span>
+        </div>
+    </div>
+    <!-- /页脚 -->
+    
+    <!-- 脚本 -->
+    <script src="../static/lib/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.core.min.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.excheck.min.js"></script>
+    <script src="../static/js/reui.js"></script>
+    <!-- /脚本 -->
+</body>
+</html>

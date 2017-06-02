@@ -1,0 +1,121 @@
+
+/* 半透明层 */
+.c-dim { position: fixed; z-index: 1999; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; background: #000; filter: alpha(opacity=30); opacity: .3; }
+
+/* 窗体 */
+.m-win { position: fixed; z-index: 2000; display: none; min-width: 250px; max-height: 100%; max-width: 100%; padding: 40px 0 76px; background: #fff; }
+.win-header,
+.win-footer { position: absolute; left: 0; width: 100%; }
+.win-header { top: 0; height: 40px; padding-left: 20px; padding-right: 20px; background: #fff; color: #333; cursor: move; }
+.win-header > h4 { overflow: hidden; margin: 0; line-height: 40px; font-size: 16px; border-bottom: 1px solid #e6e6e8; }
+.win-body { padding:20px 20px 0; }
+.win-body.xmid { width:500px; }
+.win-body.xlarge { width:680px; }
+.win-body.xhuge { width:900px; }
+.win-body.xfull { width:1000px; }
+.win-footer { bottom: 0; padding: 20px 0; background: #fff; text-align: center; }
+.win-footer .u-btn + .u-btn { margin-left: 12px; }
+.win-close { position: absolute; top: 0; right: -50px; display: inline-block; width: 50px; height: 50px; background: url(../images/win_close.png) no-repeat; cursor: pointer; }
+.win-close:hover { background-position: 0 -50px; }
+
+/* 窗体:操作按钮 */
+.win-header > a { position: absolute; float: right; width: 22px; height: 100%; color: #abb6ba; text-align: center; filter: alpha(opacity=80); opacity: .8; cursor: pointer; }
+.win-header > a:hover { filter: alpha(opacity=100); opacity: 1; }
+.win-header > a.shut { right: 15px; padding-top: 3px; font-size: 23px; font-weight: 100; color: #abb6ba; }
+.win-header > a.max { right: 35px; }
+.win-header > a.max:before,
+.win-header > a.max:after { content: " "; display: block; position: absolute; width: 13px; height: 13px; left: 50%; top: 50%; background: #fff; border: 1px double; }
+.win-header > a.max:before { margin-left: -6px; margin-top: -6px; border-top-style: dotted; border-right-style: dotted; }
+.win-header > a.max:after { display: none; margin-left: -9px; margin-top: -5px; }
+
+/* 窗体:禁止拖动 */
+.m-win[data-move="false"] .win-header { cursor: default; }
+
+/* 窗体:最大化 */
+.m-win.max { left: 0 !important; right: 0; top: 0 !important; bottom: 0; width: 100%; height: 100%; }
+.m-win.max a.max:before,
+.m-win.max a.max:after { width: 10px; height: 10px; }
+.m-win.max a.max:before { margin-left: -7px; margin-top: -7px; }
+.m-win.max a.max:after { display: block; }
+
+/* 窗体:高度全屏 */
+.m-win.yfull { top: 0 !important; bottom: 0; width: 90%; height: 100%; }
+.m-win.yfull > .win-body { position: absolute; top: 40px; bottom: 76px; width: 100%; padding: 20px; overflow: auto; }
+
+/* 窗体:信息提示 */
+.m-win.info > .win-body { position: relative; width: 480px; padding: 50px 45px; margin-bottom: -20px; font-size: 0; text-align: center; white-space: nowrap; word-wrap: normal; }
+.m-win.info > .win-body > div { display: inline-block; font-size: 14px; text-align: left; vertical-align: middle; white-space: normal; }
+.m-win.info > .win-body > .ico { margin-right: -32px; vertical-align: middle; }
+.m-win.info > .win-body > .ico + div { padding-left: 42px; }
+
+/* 窗体:信息提示-迷你版(无标题，无按钮) */
+.m-win.info.mini { padding: 0; }
+.m-win.info.mini > .win-body { max-width: 300px; padding: 30px 30px; margin-bottom: 0; }
+
+/* 窗体:纯文字信息 */
+.m-win.msg { width: auto; min-width: 0; padding: 15px; }
+.m-win.msg > i { position: absolute; z-index: -1; left: 0; right: 0; top: 0; bottom: 0; background: #000; opacity: .6; filter: alpha(opacity=60); }
+.m-win.msg > div { color: #fff; }
+
+.m-win.xnofooter { padding-bottom:30px; }
+
+/* tab选项卡 */
+.m-tabnav { height: 50px; background: #edf6fc; border: 1px solid #cbd8e4; word-wrap: normal; }
+.m-tabnav a,
+.tabnav-more > span { display: block; cursor: pointer; }
+.m-tabnav:after { display: table; content: " "; clear: both; }
+.m-tabnav > a,
+.tabnav-more > span { float: left; height: 50px; /*max-width:175px;*/ line-height: 47px; padding: 0 40px; font-size: 14px; border: 1px solid #cbd8e4; border-top: 2px solid transparent; margin: -1px 0 -1px -1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.m-tabnav > a:focus { outline: none; }
+.m-tabnav > a.active,
+.m-tabnav > a:hover,
+.tabnav-more.active > span,
+.tabnav-more:hover > span { background: #fff; border-top-color: #82d359; color: inherit; cursor: pointer; }
+.m-tabnav > a.active,
+.tabnav-more.active > span { border-bottom-color: #fff; }
+.tabnav-more { position: relative; display: table-cell; width: 1000px; }
+.tabnav-more > span { float: none; padding: 0 10px; max-width: none; border-right: none; text-align: center; }
+.tabnav-more > div { position: absolute; z-index: 1; top: 48px; right: -1px; display: none; min-width: 120px; max-width: 110%; background: #fff; border: 1px solid #cbd8e4; }
+.tabnav-more > div > a { display: block; padding: 0 10px; line-height: 35px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tabnav-more > div > a:hover,
+.tabnav-more > div > a.active { background: #5cbafb; color: #fff; }
+
+/* tab选项卡：小 */
+.m-tabnav.small { height: 42px; }
+.m-tabnav.small > a,
+.m-tabnav.small .tabnav-more > span { height: 42px; line-height: 39px; }
+.m-tabnav.small .tabnav-more > div { top: 40px; }
+
+/* tab按钮 */
+.m-tabbtns { display: inline-block; border-radius: 3px; overflow: hidden; }
+.m-tabbtns:after { display: table; content: " "; clear: both; }
+.m-tabbtns > a { float: left; display: block; padding: 0 16px; line-height: 28px; border: 1px solid #cbd8e4; }
+.m-tabbtns > a + a { margin-left: -1px; }
+.m-tabbtns > a:hover,
+.m-tabbtns > a.active { border-color: #26a7ff; }
+.m-tabbtns > a.active { background: #26a7ff; color: #fff; }
+
+/* tab内容 */
+.m-tabs > .tab-pane { display: none; }
+.m-tabs > .tab-pane.active { display: block; }
+
+/* 日期控件 */
+.c-date { position: relative; display: inline-block; background: #fff; vertical-align: middle; }
+.c-date:after { content: " "; display: block; width: 16px; height: 16px; position: absolute; right: 10px; top: 10px; background: url(../images/date.png) no-repeat; }
+.c-date > input[type="text"] { position: relative; z-index: 1; width: 100%; background: transparent; vertical-align: top; }
+
+/* 滑块控件 */
+.c-slider { position: relative; display: inline-block; width: 160px; height: 6px; font-size: 0; background: #dae6ec; border-radius: 3px; white-space: nowrap; vertical-align: middle; cursor: pointer; }
+.slider-value,
+.slider-handle { display: inline-block; vertical-align: top; }
+.slider-value { height: 100%; background: #6391ed; border-radius: 3px; }
+.slider-handle { height: 16px; width: 16px; margin-left: -8px; margin-top: -5px; background: #fff; border: 2px solid #6391ed; border-radius: 8px; cursor: move; }
+
+/* 锚点 */
+.m-anchor { position:fixed; z-index:999; width:10%; left:0; top:115px; display:none; text-align:right; }
+.m-anchor > li > a { display:inline-block; width:90px; line-height:26px; margin-top:4px; margin-left:5px; padding-right:8px; color:#00b89c; border-right:4px solid #79d5c8; text-align:right;}
+.m-anchor > li > a.active { padding-right:0; background:#00b99a; color:#fff; text-align:center; border:none; border-radius:3px;}
+
+@media (min-width: 1280px) {
+    .m-anchor { display:block;}
+}

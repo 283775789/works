@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"用户管理"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var6":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>用户管理</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <div class="filter-option">
+                            <label>用户名：</label>
+                            <input class="w-form3" type="text" placeholder="请输入用户名" />
+                            <label>登录名：</label>
+                            <input class="w-form3" type="text" placeholder="请输入登录名" />
+                            <label>所属部门：</label>
+                            <input class="w-form3" type="text" placeholder="请输入部门" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                            <a class="u-btn xlesser jsx-openwin" data-target="#win-adduser">新增用户</a>
+                            <a class="u-btn xlesser">批量删除</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck"><input type="checkbox" /></th>
+                            <th>登录名</th>
+                            <th>用户名</th>
+                            <th>岗位</th>
+                            <th>所属部门</th>
+                            <th>角色</th>
+                            <th style="width:30%;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr class="selected">
+                            <td><input type="checkbox" checked /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>zhangsan</td>
+                            <td>张三</td>
+                            <td>编辑</td>
+                            <td>信息部</td>
+                            <td>部门主任</td>
+                            <td>
+                                <a>角色授权</a>
+                                <a class="jsx-openwin" data-target="#win-auth">网站授权</a>
+                                <a>修改</a>
+                                <a>删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @@include('include/_pagination.html')
+        </div>
+    </div>
+    <!-- /主体 -->
+
+    <!-- 窗体:授权 -->
+    <div class="m-win jsx-win" id="win-auth">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>网站授权</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-loader">
+                <div>
+                    <label class="xtitle"><input type="checkbox" /> 政策网站列表</label>
+                    <div>
+                        <label><input type="checkbox" /> 网易新闻</label>
+                        <label><input type="checkbox" /> 齐鲁网</label>
+                        <label><input type="checkbox" /> 齐鲁网报</label>
+                        <label><input type="checkbox" /> 长江网</label>
+                        <label><input type="checkbox" /> 长城网</label>
+                        <label><input type="checkbox" /> 网易新闻</label>
+                        <label><input type="checkbox" /> 齐鲁网</label>
+                        <label><input type="checkbox" /> 网易新闻</label>
+                        <label><input type="checkbox" /> 齐鲁网</label>
+                        <label><input type="checkbox" /> 齐鲁网报</label>
+                        <label><input type="checkbox" /> 长江网</label>
+                        <label><input type="checkbox" /> 长城网</label>
+                        <label><input type="checkbox" /> 网易新闻</label>
+                        <label><input type="checkbox" /> 齐鲁网</label>
+                    </div>
+                </div>
+
+                <div class="loader-btns">
+                    <a class="u-btn xlesser">加入&gt;&gt;</a>
+                    <a class="u-btn xlesser">&lt;&lt;移除</a>
+                </div>
+
+                <div>
+                    <label class="xtitle"><input type="checkbox" /> 政策网站选择</label>
+                    <div>
+                        <label><input type="checkbox" /> 齐鲁网</label>
+                        <label><input type="checkbox" /> 齐鲁网报</label>
+                        <label><input type="checkbox" /> 长江网</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="win-footer">
+            <a class="u-btn xprimary js-win-close">确定</a>
+            <a class="u-btn xlesser js-win-close">取消</a>
+        </div>
+    </div>
+    <!-- /窗体:授权 -->
+
+    <!-- 窗体:新增用户 -->
+    <div class="m-win jsx-win" id="win-adduser">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>新增用户</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-yscroll">
+                <div class="m-form xbbd">
+                    <div>
+                        <label style="width:6em;"><b>*</b>登录名：</label>
+                        <div>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>*</b>密码：</label>
+                        <div>
+                            <input type="password" />
+                        </div>
+                    </div>
+                </div>
+                <div class="m-form xbbd">
+                    <div>
+                        <label style="width:6em;"><b>*</b>用户名：</label>
+                        <div>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>*</b>性别：</label>
+                        <div>
+                            <label><input type="radio" name="r-gender" />男</label>
+                            <label><input type="radio" name="r-gender" />女</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label>电话：</label>
+                        <div>
+                            <input type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label>邮箱：</label>
+                        <div>
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="m-form">
+                    <div>
+                        <label style="width:6em;"><b>*</b>所属部门：</label>
+                        <div>
+                            <select>
+                                <option>信息部</option>
+                                <option>信息部</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>*</b>岗位：</label>
+                        <div>
+                            <select>
+                                <option>编辑</option>
+                                <option>主编</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="win-footer">
+            <a class="u-btn xprimary js-win-close">确定</a>
+            <a class="u-btn xlesser js-win-close">取消</a>
+        </div>
+    </div>
+    <!-- /窗体:新增用户 -->
+
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

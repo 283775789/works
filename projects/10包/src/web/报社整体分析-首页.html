@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"报社整体分析-首页"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var5":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>报社整体分析</h4>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <label>时间：</label>
+                        <div class="filter-option">
+                            <a class="selected">近一天</a>
+                            <a>近三天</a>
+                            <a>近七天</a>
+                            <a>指定日期</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>名称：</label>
+                        <div class="filter-option">
+                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <button class="u-btn xprimary" type="submit">搜索</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-cells xsummary">
+                <div>
+                    <div class="xsummary-item xcolor1">
+                        <h4>发稿量</h4>
+                        <div>123</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="xsummary-item xcolor2">
+                        <h4>阅读量</h4>
+                        <div>123</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="xsummary-item xcolor3">
+                        <h4>评论量</h4>
+                        <div>123</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="xsummary-item xcolor4">
+                        <h4>点赞量</h4>
+                        <div>123</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="xsummary-item xcolor5">
+                        <h4>转载量</h4>
+                        <div>123</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck" style="width:80px;">排名</th>
+                            <th style="width:30%;">新闻标题</th>
+                            <th style="width:15%;">发布时间</th>
+                            <th class="desc">转载量<i class="ico ico-sort"></i></th>
+                            <th>评论量<i class="ico ico-sort"></i></th>
+                            <th class="asc">点赞量<i class="ico ico-sort"></i></th>
+                            <th>传播指数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="u-num top">1</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-up"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num top">2</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-down"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num top">3</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-up"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-up"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-up"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>                        
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-avg"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-up"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-avg"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">10</span></td>
+                            <td>成都飞机机场实施单跑道运行 所有航班</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>1234</a></td>
+                            <td>1234</td>
+                            <td>1234</td>
+                            <td>1.1 <i class="ico ico-down"></i></td>
+                            <td><a>传播分析</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            @@include('include/_pagination.html')
+        </div>
+
+        <div class="m-cells xbs">
+            <div class="cells-col xbs-avg">
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>原创稿件转载排行</h4>
+                        <div class="title-right">
+                            <select>
+                                <option>移动客户端</option>
+                            </select>
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <table class="m-sorttable xtspace">
+                        <tr>
+                            <th style="width:50px;">排行</th>
+                            <th style="width:35%;">热点</th>
+                            <th>转载量</th>
+                            <th>评论量</th>
+                            <th>点赞量</th>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num top">1</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num top">2</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num top">3</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">4</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">10</span></td>
+                            <td><a>马云入股新浪4个猜测</a></td>
+                            <td>234</td>
+                            <td>234</td>
+                            <td>234</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="cells-col xbs-avg">
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>原创稿件分布排行</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox">
+                        <img src="../static/images/demo/chart17.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-cells xbs">
+            <div class="cells-col xbs-avg">
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>原创稿件媒体转载分析</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox">
+                        <img src="../static/images/demo/chart18.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="cells-col xbs-avg">
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>原创稿件版面转载分析</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox">
+                        <img src="../static/images/demo/chart19.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-card">
+            <div class="m-title xnoborder">
+                <h4>原创稿件栏目转载分析</h4>
+                <div class="title-right">
+                    <a class="title-more">更多</a>
+                </div>
+            </div>
+
+            <div class="m-chartbox">
+                <img src="../static/images/demo/chart20.png" />
+            </div>
+        </div>
+
+        <div class="m-card">
+            <div class="m-title xnoborder">
+                <h4>读者评论分析</h4>
+                <div class="title-right">
+                    <a class="title-more">更多</a>
+                </div>
+            </div>
+
+            <div class="m-chartbox">
+                <img src="../static/images/demo/chart21.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

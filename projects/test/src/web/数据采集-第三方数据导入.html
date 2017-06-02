@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"第三方数据导入"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>数据采集</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+            @@include('include/_datanav.html',{"var8":"class=\"active\""})
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <label>类型：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>线索</a>
+                            <a>稿件</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>名称：</label>
+                        <div class="filter-option">
+                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                            <a class="u-btn xlesser">下载模板</a>
+                            <a class="u-btn xlesser jsx-openwin" data-target="#win-import">新增数据导入</a>
+                            <a class="u-btn xlesser">创建</a>
+                            <a class="u-btn xlesser">批量删除</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck"><input type="checkbox" /></th>
+                            <th style="width:30%;">文件名称</th>
+                            <th style="width:20%;">数据来源</th>
+                            <th>导入人员</th>
+                            <th style="width:20%;">导入时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr class="selected">
+                            <td><input type="checkbox" checked /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>待编稿2017</td>
+                            <td>xml文件导入</td>
+                            <td>系统管理员</td>
+                            <td>2017-06-23 12:23:54</td>
+                            <td><a>删除</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @@include('include/_pagination.html')
+        </div>
+    </div>
+    <!-- /主体 -->
+
+    <!-- 窗体 -->
+    <div class="m-win jsx-win" id="win-import">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>新增数据导入</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-form xlarge xnomargin">
+                <div>
+                    <label style="width:6em;"><b>*</b>数据类型：</label>
+                    <div>
+                        <a class="u-tag">XML</a>
+                        <a class="u-tag">excel</a>
+                    </div>
+                </div>
+                <div>
+                    <label><b>*</b>选择文件：</label>
+                    <div>
+                        <input type="text" style="width:80%" readonly />
+                        <div class="u-file" data-name="浏览"><input type="file" /></div>
+                    </div>
+                </div>
+                <div>
+                    <label><b>*</b>数据类型：</label>
+                    <div>
+                        <label><input type="radio" name="type" />稿件</label>
+                        <label><input type="radio" name="type" />线索</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="win-footer">
+            <a class="u-btn xprimary js-win-close">确定</a>
+            <a class="u-btn xlesser js-win-close">取消</a>
+        </div>
+    </div>
+    <!-- /窗体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

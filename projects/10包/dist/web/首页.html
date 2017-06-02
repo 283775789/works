@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/lib/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../static/lib/ztree/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+        <script src="../static/lib/html5shiv.min.js"></script>
+        <script src="../static/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 头部 -->
+	<div class="g-header">
+        <div class="container">
+            <div class="header-left">
+                <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
+            </div>
+            <div class="header-right">
+                <a><i class="ico ico-setting"></i>个性化设置</a>
+                <a><i class="ico ico-pwd"></i>密码修改</a>
+                <a class="header-avatar"><img src="../static/images/demo/avatar.png" />六六</a>
+                <a><i class="ico ico-off"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /头部 -->
+    
+    <!-- 导航 -->
+	<div class="g-nav">
+        <div class="container">
+            <ul class="nav-body">
+                <li class="active"><a href="首页.html">首页</a></li>
+                <li><a>热点推荐</a></li>
+                <li><a>区域热点</a></li>
+                <li><a>选题分析</a></li>
+                <li><a>报社整体分析</a></li>
+                <li><a>信息检索</a></li>
+                <li><a>我的关注</a></li>
+                <li><a href="数据采集-门户网站.html">数据分析</a></li>
+                <li><a href="系统管理-机构管理.html">系统管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /导航 -->
+
+
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="row">
+            <div class="col-xs-8">
+                <!-- 稿件信息 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>稿件信息</h4>
+                        <div class="title-right">
+                            <div class="m-txttab">
+                                <a>近7天</a>
+                                <a>近30天</a>
+                                <a>近60天</a>
+                            </div>
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-cells xsummary">
+                        <div>
+                            <div class="xsummary-item xcolor1">
+                                <h4>发稿量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor2">
+                                <h4>阅读量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor3">
+                                <h4>评论量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor4">
+                                <h4>点赞量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="xsummary-item xcolor5">
+                                <h4>转载量</h4>
+                                <div>123</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox">
+                        <img src="../static/images/demo/chart1.png" />
+                    </div>
+                </div>
+                <!-- /稿件信息 -->
+
+                <!-- 我的关注 -->
+                <div class="m-card xlike">
+                    <div class="m-title xsolid">
+                        <h4>我的关注</h4>
+                    </div>
+
+                    <div class="m-expander">
+                        <ul class="m-cells xspace">
+                            <li>
+                                <div>
+                                    <div class="m-subtitle xhome">
+                                        <span>我的新闻</span>
+                                        <a class="subtitle-right">更多</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="m-subtitle xhome">
+                                        <span>我的新闻</span>
+                                        <a class="subtitle-right">更多</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="xborder">
+                                    <table class="m-sorttable">
+                                        <tr>
+                                            <th style="width:50px;">排行</th>
+                                            <th>标题</th>
+                                            <th style="width:40px;">指数</th>
+                                            <th style="width:50px;">趋势</th>
+                                        </tr>
+                                        <tr class="xlarge">
+                                            <td><span class="u-num">1</span></td>
+                                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">2</span></td>
+                                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">3</span></td>
+                                            <td><a>人民代表习近平</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-avg"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">4</span></td>
+                                            <td><a>习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-avg"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">5</span></td>
+                                            <td><a>2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-down"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">6</span></td>
+                                            <td><a>文案大师进阶指南（共四册）</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">7</span></td>
+                                            <td><a>这世间所有的纸短情长</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">8</span></td>
+                                            <td><a>刻意练习：如何从新手到大师</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">9</span></td>
+                                            <td><a>当呼吸化为空气</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">3</span></td>
+                                            <td><a>七堂极简物理课</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-down"></i></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="xborder">
+                                    <table class="m-sorttable">
+                                        <tr>
+                                            <th style="width:50px;">排行</th>
+                                            <th>标题</th>
+                                            <th style="width:40px;">指数</th>
+                                            <th style="width:50px;">趋势</th>
+                                        </tr>
+                                        <tr class="xlarge">
+                                            <td><span class="u-num">1</span></td>
+                                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">2</span></td>
+                                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">3</span></td>
+                                            <td><a>人民代表习近平</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-avg"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">4</span></td>
+                                            <td><a>习近平 2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-avg"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">5</span></td>
+                                            <td><a>2017年全国两会</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-down"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">6</span></td>
+                                            <td><a>文案大师进阶指南（共四册）</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">7</span></td>
+                                            <td><a>这世间所有的纸短情长</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">8</span></td>
+                                            <td><a>刻意练习：如何从新手到大师</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">9</span></td>
+                                            <td><a>当呼吸化为空气</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-up"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="u-num">3</span></td>
+                                            <td><a>七堂极简物理课</a></td>
+                                            <td><span class="t-midgray">1.1</span></td>
+                                            <td><i class="ico ico-down"></i></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="m-expander">
+                        <ul class="m-cells xspace">
+                            <li>
+                                <div>
+                                    <div class="m-subtitle xhome">
+                                        <span>重大报道</span>
+                                        <a class="subtitle-right">更多</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="m-subtitle xhome">
+                                        <span>我的人物</span>
+                                        <a class="subtitle-right">更多</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="xborder xspace">
+                                    <ul class="m-grid xcol2">
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>劳动节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节母亲节母亲节母亲节母亲节母</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="u-link xlarge">
+                                                <span>母亲节</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="xborder xspace">
+                                    <div class="m-imgbox">
+                                        <img src="../static/images/demo/person.png" />
+                                        <div class="imgbox-body">
+                                            <h4>张三（主持人）</h4>
+                                            <div>相关新闻：12345</div>
+                                        </div>
+                                    </div>
+                                    <div class="m-imgbox">
+                                        <img src="../static/images/demo/person.png" />
+                                        <div class="imgbox-body">
+                                            <h4>张三（主持人）</h4>
+                                            <div>相关新闻：12345</div>
+                                        </div>
+                                    </div>
+                                    <div class="m-imgbox">
+                                        <img src="../static/images/demo/person.png" />
+                                        <div class="imgbox-body">
+                                            <h4>张三（主持人）</h4>
+                                            <div>相关新闻：12345</div>
+                                        </div>
+                                    </div>
+                                    <div class="m-imgbox">
+                                        <img src="../static/images/demo/person.png" />
+                                        <div class="imgbox-body">
+                                            <h4>张三（主持人）</h4>
+                                            <div>相关新闻：12345</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /我的关注 -->
+
+                <!-- 选题行为分析 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder xnomargin">
+                        <h4>选题行为分析</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-expander">
+                        <ul class="m-cells xspace">
+                            <li>
+                                <div class="xborder">
+                                    <div class="m-chartbox">
+                                        <img src="../static/images/demo/chart2.png" />
+                                    </div>
+                                </div>
+                                <div class="xborder">
+                                    <div class="m-chartbox">
+                                        <img src="../static/images/demo/chart3.png" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /选题行为分析 -->
+
+                <!-- 本社部门排行 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder xnomargin">
+                        <h4>选题行为分析</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox xspace">
+                        <img src="../static/images/demo/chart4.png" />
+                    </div>
+                </div>
+                <!-- /本社部门排行 -->
+
+                <!-- 报社影响力趋势 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder xnomargin">
+                        <h4>报社影响力趋势</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-chartbox xspace">
+                        <img src="../static/images/demo/chart5.png" />
+                    </div>
+                </div>
+                <!-- /报社影响力趋势 -->
+            </div>
+
+            <div class="col-xs-4">
+                <!-- 工作任务 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>工作任务</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-cells xtask">
+                        <a class="cells-col" data-num="99">
+                            <i class="ico ico-draft"></i>
+                            <div>草稿</div>
+                        </a>
+                        <a class="cells-col" data-num="3">
+                            <i class="ico ico-wait"></i>
+                            <div>草稿</div>
+                        </a>
+                        <a class="cells-col">
+                            <i class="ico ico-pass"></i>
+                            <div>草稿</div>
+                        </a>
+                        <a class="cells-col">
+                            <i class="ico ico-ng"></i>
+                            <div>草稿</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /工作任务 -->
+                
+                <!-- 热点新闻 -->
+                <div class="m-card xlike">
+                    <div class="m-title xnoborder">
+                        <h4>热点新闻</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <table class="m-sorttable xtspace">
+                        <tr>
+                            <th style="width:50px;">排行</th>
+                            <th>标题</th>
+                            <th style="width:40px;">指数</th>
+                            <th style="width:50px;">趋势</th>
+                        </tr>
+                        <tr class="xlarge">
+                            <td><span class="u-num">1</span></td>
+                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">2</span></td>
+                            <td><a>人民代表习近平 2017年全国两会</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">3</span></td>
+                            <td><a>人民代表习近平</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-avg"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">4</span></td>
+                            <td><a>习近平 2017年全国两会</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-avg"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">5</span></td>
+                            <td><a>2017年全国两会</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">6</span></td>
+                            <td><a>文案大师进阶指南（共四册）</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">7</span></td>
+                            <td><a>这世间所有的纸短情长</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">8</span></td>
+                            <td><a>刻意练习：如何从新手到大师</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">9</span></td>
+                            <td><a>当呼吸化为空气</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-up"></i></td>
+                        </tr>
+                        <tr>
+                            <td><span class="u-num">3</span></td>
+                            <td><a>七堂极简物理课</a></td>
+                            <td><span class="t-midgray">1.1</span></td>
+                            <td><i class="ico ico-down"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /热点新闻 -->
+
+                <!-- 热点新闻 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>热点话题</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-hots">
+                        <a class="xwx2 xhx2 xcolor1"><span>女子用熟鸡蛋化妆</span></a>
+                        <a class="xcolor2"><span>14岁少成教师</span></a>
+                        <a class="xcolor3"><span>曝林心如瘦身菜单</span></a>
+                        <a class="xcolor3"><span>国内成品油下调</span></a>
+                        <a class="xcolor4"><span>58同城陷数据泄露</span></a>
+                    </div>
+                    <div class="m-hots xright">
+                        <a class="xhx2 xcolor5"><span>教师胶带封学生嘴</span></a>
+                        <a class="xhx2 xcolor5"><span>用麻将拼挪车电话</span></a>
+                        <a class="xhx2 xcolor2"><span>老汉与野猪血战</span></a>
+                        <a class="xcolor4"><span>摩门教男子如帝王</span></a>
+                        <a class="xcolor6"><span>国足重拾出线希望</span></a>
+                    </div>
+                </div>
+                <!-- 热点新闻 -->
+
+                <!-- 最新线索 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>最新线索</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <ul class="m-grid xcol2 xsmall xmargintop">
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 最新线索 -->
+
+                <!-- 热点选题 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>热点选题</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <ul class="m-grid xcol2 xsmall xmargintop">
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>北京雾霾北京雾霾北京雾霾北京雾霾</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="u-link">
+                                <span>诗词大会</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 热点选题 -->
+
+                <!-- 热搜词 -->
+                <div class="m-card">
+                    <div class="m-title xnoborder">
+                        <h4>热搜词</h4>
+                        <div class="title-right">
+                            <a class="title-more">更多</a>
+                        </div>
+                    </div>
+
+                    <div class="m-hotword">
+                        <img src="../static/images/demo/hotword.png" />
+                    </div>
+                </div>
+                <!-- 热搜词 -->
+            </div>
+        </div>
+
+        <div class="m-affix">
+            <a>创建选题</a>
+        </div>
+    </div>
+    <!-- /主体 -->
+    
+    <!-- 页脚 -->
+    <div class="g-footer">
+        <div>
+            <span>国家新闻出版广电总局新闻出版重大科技工程项目领导小组办公室 主办</span>
+            <span>地址：北京市宣武门外大街40号</span>
+        </div>
+        <div>
+            <span>2015-2018 >国家新闻出版广电总局 版权所有</span>
+            <span>京ICP备06034703号 文保网备案号1101020012</span>
+        </div>
+    </div>
+    <!-- /页脚 -->
+    
+    <!-- 脚本 -->
+    <script src="../static/lib/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.core.min.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.excheck.min.js"></script>
+    <script src="../static/js/reui.js"></script>
+    <!-- /脚本 -->
+</body>
+</html>

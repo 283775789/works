@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>机构管理</title>
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/lib/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../static/lib/ztree/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+        <script src="../static/lib/html5shiv.min.js"></script>
+        <script src="../static/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 头部 -->
+	<div class="g-header">
+        <div class="container">
+            <div class="header-left">
+                <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
+            </div>
+            <div class="header-right">
+                <a><i class="ico ico-setting"></i>个性化设置</a>
+                <a><i class="ico ico-pwd"></i>密码修改</a>
+                <a class="header-avatar"><img src="../static/images/demo/avatar.png" />六六</a>
+                <a><i class="ico ico-off"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /头部 -->
+    
+    <!-- 导航 -->
+	<div class="g-nav">
+        <div class="container">
+            <ul class="nav-body">
+                <li><a href="首页.html">首页</a></li>
+                <li><a>热点推荐</a></li>
+                <li><a>区域热点</a></li>
+                <li><a>选题分析</a></li>
+                <li><a>报社整体分析</a></li>
+                <li><a>信息检索</a></li>
+                <li><a>我的关注</a></li>
+                <li><a href="数据采集-门户网站.html">数据分析</a></li>
+                <li class="active"><a href="系统管理-机构管理.html">系统管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /导航 -->
+
+
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>系统管理</h4>
+            </div>
+            
+            <!-- 二级导航 -->
+	        <div class="m-subnav">
+                <a class="active" href="系统管理-机构管理.html">机构管理</a>
+                <a>部门管理</a>
+                <a>岗位管理</a>
+                <a href="系统管理-角色管理.html">角色管理</a>
+                <a>用户管理</a>
+                <a href="系统管理-权重管理.html">权重管理</a>
+                <a>接口管理</a>
+            </div>
+            <!-- /二级导航 -->
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <label>名称：</label>
+                        <div class="filter-option">
+                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                            <a class="u-btn xlesser">新增机构</a>
+                            <a class="u-btn xlesser">批量删除</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck"><input type="checkbox" /></th>
+                            <th>机构名称</th>
+                            <th style="width:12%;">机构编码</th>
+                            <th style="width:12%;">微博帐号</th>
+                            <th style="width:12%;">微信帐号</th>
+                            <th style="width:15%;">门户网站</th>
+                            <th style="width:12%;">上级机构</th>
+                            <th style="width:12%;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id1">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id1-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id1-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr class="selected">
+                                            <td class="xcheck"><input type="checkbox" checked /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id2" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id2">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id2-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id2-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id3" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id3">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id3-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id3-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id4" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id4">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id4-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id4-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id5" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id5">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id5-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id5-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id6" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id6">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id6-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id6-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id7" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id7">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id7-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id7-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id8" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id8">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id8-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id8-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id9" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id9">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id9-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id9-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="8">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td><a class="collapsed jsx-collapse" data-target="#id10" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报</td>
+                                            <td style="width:12%;">jwb00001</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:12%;">beijing_Daily</td>
+                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                            <td style="width:12%;"></td>
+                                            <td style="width:12%;">
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id10">
+                                        <tr>
+                                            <td class="xbox" colspan="8">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td><a class="collapsed jsx-collapse" data-target="#id10-1" data-animate="false"><i class="ico ico-collapse"></i></a>今晚报社</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id10-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构1</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td>机构2</td>
+                                                            <td style="width:12%;">jwb00001</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:12%;">beijing_Daily</td>
+                                                            <td style="width:15%;"><a>http://www.jwb.com.cn</a></td>
+                                                            <td style="width:12%;"></td>
+                                                            <td style="width:12%;">
+                                                                <a>修改</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+    <!-- 分页 -->
+    <div class="m-pagination">
+        <div class="pagination-body">
+            <a class="pagination-prev disabled"><i class="ico ico-prevpage"></i>上一页</a>
+            <div class="pagination-nums">
+                <a class="active">1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a>5</a>
+                <i></i>
+            </div>
+            <a class="pagination-next">下一页<i class="ico ico-nextpage"></i></a>
+        </div>
+        <div class="pagination-goto">
+            <span>每页10条，共15页，到第</span>
+            <input type="text" />
+            <span>页</span>
+            <a class="pagination-btn">确定</a>
+        </div>
+    </div>
+    <!-- /分页 -->
+        </div>
+    </div>
+    <!-- /主体 -->
+    
+    <!-- 页脚 -->
+    <div class="g-footer">
+        <div>
+            <span>国家新闻出版广电总局新闻出版重大科技工程项目领导小组办公室 主办</span>
+            <span>地址：北京市宣武门外大街40号</span>
+        </div>
+        <div>
+            <span>2015-2018 >国家新闻出版广电总局 版权所有</span>
+            <span>京ICP备06034703号 文保网备案号1101020012</span>
+        </div>
+    </div>
+    <!-- /页脚 -->
+    
+    <!-- 脚本 -->
+    <script src="../static/lib/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.core.min.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.excheck.min.js"></script>
+    <script src="../static/js/reui.js"></script>
+    <!-- /脚本 -->
+</body>
+</html>

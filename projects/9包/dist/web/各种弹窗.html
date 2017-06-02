@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>第三方数据导入</title>
+    <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../static/lib/datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../static/lib/ztree/zTreeStyle/zTreeStyle.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+        <script src="../static/lib/html5shiv.min.js"></script>
+        <script src="../static/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 头部 -->
+	<div class="g-header">
+        <div class="container">
+            <div class="header-left">
+                <a class="header-logo"><img src="../static/images/logo.png" />图书选题及发行分析系统</a>
+            </div>
+            <div class="header-right">
+                <a><i class="ico ico-setting"></i>个性化设置</a>
+                <a><i class="ico ico-pwd"></i>密码修改</a>
+                <a class="header-avatar"><img src="../static/images/demo/avatar.png" />六六</a>
+                <a><i class="ico ico-off"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /头部 -->
+    
+    <!-- 导航 -->
+	<div class="g-nav">
+        <div class="container">
+            <ul class="nav-body">
+                <li><a href="首页.html">首页</a></li>
+                <li>
+                    <a>出版市场监测</a>
+                    <div class="nav-submenu">
+                       <dl>
+                           <dt>出版资讯</dt>
+                           <dd><a>本出版社信息</a></dd>
+                           <dd><a>行业政策信息</a></dd>
+                           <dt>排行榜单</dt>
+                           <dd><a>电商图书榜单</a></dd>
+                           <dd><a>本社榜单</a></dd>
+                           <dd><a>热门话题榜单</a></dd>
+                           <dd><a>热门作者榜单</a></dd>
+                           <dd><a>图书折扣榜单</a></dd>
+                           <dd><a>书评热词分析</a></dd>
+                           <dd><a>书评排行榜单</a></dd>
+                           <dd><a>网络文学榜单</a></dd>
+                       </dl>
+                    </div>
+                </li>
+                <li>
+                    <a>选题支撑</a>
+                    <div class="nav-submenu">
+                        <dl>
+                            <dt>选题分析</dt>
+                            <dd><a>创建选题</a></dd>
+                            <dd><a>行业政策信息</a></dd>
+                            <dt>排行榜单</dt>
+                            <dd><a>定向关注</a></dd>
+                            <dd><a>我的热点</a></dd>
+                            <dd><a>我的图书</a></dd>
+                            <dd><a>我的作者</a></dd>
+                            <dd><a>特别关注</a></dd>
+                        </dl>
+                    </div>
+                </li>
+                <li>
+                    <a>营销决策支撑</a>
+                    <div class="nav-submenu">
+                        <a>本社图书分析</a>
+                        <a>大众图书分析</a>
+                        <a>营销整体分析</a>
+                    </div>
+                </li>
+                <li>
+                    <a>出版反馈分析</a>
+                    <div class="nav-submenu">
+                        <a>本社反馈分析</a>
+                        <a>大众反馈分析</a>
+                        <a>阅读反馈分析</a>
+                        <a>专家名人分析</a>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="数据采集-门户网站.html">采集分析</a>
+                    <div class="nav-submenu">
+                        <a href="数据采集-门户网站.html">门户网站</a>
+                        <a>微博</a>
+                        <a>微信</a>
+                        <a>论坛</a>
+                        <a href="数据采集-第三方.html">第三方数据导入</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="系统管理-机构管理.html">系统管理</a>
+                    <div class="nav-submenu">
+                        <a href="系统管理-机构管理.html">机构管理</a>
+                        <a>角色管理</a>
+                        <a>岗位管理</a>
+                        <a>部门管理</a>
+                        <a>接口管理</a>
+                        <a href="系统管理-权重管理.html">权重管理</a>
+                        <a href="系统管理-用户管理.html">用户管理</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /导航 -->
+
+
+
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box" style="padding:30px;">
+            <!-- 信息提示:演示按钮 -->
+            <a class="u-btn xprimary" id="confirm">确认提示</a>
+            <a class="u-btn xprimary" id="msg">提示信息</a>
+            <a class="u-btn xprimary" id="success">成功提示</a>
+            <a class="u-btn xprimary" id="alert">警告提示</a>
+            <a class="u-btn xprimary" id="error">错误提示</a>
+            <a class="u-btn xprimary" id="loading">加载提示</a>
+            <a class="u-btn xprimary" id="custom">完全自定义提示</a>
+            <!-- /信息提示:演示按钮 -->
+
+            <div>
+                <h3 style="margin:20px;">共分6种弹窗,调用方法如下:</h3>
+                <div style="padding-left:30px; line-height:30px; color:#666; min-height:500px;">
+                    确认弹窗:reui.confirm(content,title,cb1,cb2,cb3);
+                    <br />
+                    提示弹窗:reui.tip(content,title,cb1,cb2);
+                    <br />
+                    警告弹窗:reui.alert(content,title,cb1,cb2,cb3);
+                    <br />
+                    错误弹窗:reui.error(content,title,cb1,cb2);
+                    <br />
+                    成功弹窗:reui.success(content,title,cb1);
+                    <br />
+                    加载弹窗:reui.loading(content,title,cb1);
+                    <br />
+                    <p style="color:#333; font-weight:bold;">参数说明:</p>
+                    <p style="padding-left:30px;">1.所有参数都可以省略或指定为空字符串，null等，回调函数对应的顺序需要参照弹窗的按钮个数，第一个回调函数对应第一个按钮，以此类推，按钮回调函数对照完成后接下来的函数为弹窗隐藏回调函数（其总是会被触发）。</p>
+                    <p style="padding-left:30px;">2.函数的返回值为其对应的弹窗本身的jQuery对象。</p>
+                    <p style="color:#333; font-weight:bold;">
+                        弹窗方法:
+                        <p style="padding-left:30px;">
+                        关闭所有弹窗:$('.jsx-win').reui('close');
+                        <br />
+                        关闭单一弹窗:$(selector).reui('close')，selector为弹窗的jQuery选择器。
+                        </p>
+                    </p>
+                </div>
+            </div>
+			
+			<div style="color:#666;">
+                <p style="color:#333; font-weight:bold;">
+                   表单错误信息显示:
+                </p>
+                <div>
+                    reui.invalid(text,$control,time);
+                    <br /><br />
+                </div>
+                参数说明:
+                <div style="padding-left:20px;line-height:1.8;">
+                    text:错误文本<br />
+                    $control:要显示错误信息的表单控件的jquery对象<br />
+                    time:错误信息显示的时长，默认显示1s<br /><br />
+                </div>
+            </div>
+
+            <div class="m-form">
+                <div>
+                    <label style="width:6em;"><b>*</b>网站名称：</label>
+                    <div><input id="ctr1" type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>网站地址：</label>
+                    <div><input type="text" /></div>
+                </div>
+                <div>
+                    <label><b>*</b>网站等级：</label>
+                    <div>
+                        <select>
+                            <option>核心媒体</option>
+                            <option>一级媒体</option>
+                            <option>二级媒体</option>
+                            <option>三级媒体</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label><b>*</b>所属地区：</label>
+                    <div>
+                        <select style="width:127px;">
+                            <option></option>
+                        </select>
+                        <select style="width:127px;">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <a class="u-btn xprimary js-btnsubmit">报错演示</a>
+        </div>
+    </div>
+    <!-- /主体 -->
+
+    
+    <!-- 页脚 -->
+    <div class="g-footer">
+        <div>
+            <span>国家新闻出版广电总局新闻出版重大科技工程项目领导小组办公室 主办</span>
+            <span>地址：北京市宣武门外大街40号</span>
+        </div>
+        <div>
+            <span>2015-2018 >国家新闻出版广电总局 版权所有</span>
+            <span>京ICP备06034703号 文保网备案号1101020012</span>
+        </div>
+    </div>
+    <!-- /页脚 -->
+    
+    <!-- 脚本 -->
+    <script src="../static/lib/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="../static/lib/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.core.min.js"></script>
+    <script src="../static/lib/ztree/jquery.ztree.excheck.min.js"></script>
+    <script src="../static/js/reui.js"></script>
+    <!-- /脚本 -->
+
+    <!-- 信息提示:脚本 -->
+    <script>
+    // 确认提示
+    $('#confirm').on('click', function () {
+        var yes = function () {
+            reui.msg('您点击了确定按钮');
+        };
+
+        var no = function () {
+            reui.msg('您点击了取消按钮');
+        };
+
+        var hide = function () {
+            setTimeout(function () {
+                reui.msg('隐藏事件被触发');
+            }, 1500);
+        };
+        
+        reui.confirm('确认退出系统？', '退出系统', yes, no, hide);
+    });
+
+    // 信息提示
+    $('#msg').on('click', function () {
+        reui.tip('提示信息提示信息提示信息提示信息!');
+    });
+
+    // 成功提示
+    $('#success').on('click', function () {
+        var hideCallback = function () {
+            reui.msg('隐藏事件被触发。');
+        };
+
+        reui.success('文件上传成功！', hideCallback);
+    });
+
+    // 警告提示:回调事件同confirm
+    $('#alert').on('click', function () {
+        reui.alert('提示信息提示信息提示信息提示信息?');
+    });
+
+    // 错误提示
+    $('#error').on('click', function () {
+        reui.error('提示信息提示信息提示信息提示信息');
+    });
+
+    // 加载提示
+    $('#loading').on('click', function () {
+        reui.loading('文件正在上传，请稍候…');
+    });
+
+    // 自定义
+    $('#custom').on('click', function () {
+        reui.win({
+            title: '自定义标题',
+            content: '内容',
+            icon: '<i class="ico ico-setting"></i>',
+            btns: [
+                {
+                    html: '<a class="u-btn xprimary">自定义按钮1</a>',
+                    callback: function () {
+                        reui.msg('按钮1回调函数触发')
+                    },
+                    closeWin:false
+                },
+                {
+                    html: '<a class="u-btn xlesser">自定义按钮2</a>',
+                    callback: function () {
+                        reui.msg('按钮2回调函数触发')
+                    }
+                }
+            ],
+            hide: function () {
+                setTimeout(function () {
+                    reui.msg('隐藏回调函数触发.');
+                },2000)
+            },
+            max: true
+        });
+        });
+		
+		// 报错提示
+        $('.js-btnsubmit').on('click', function () {
+            reui.invalid('提示信息', $('#ctr1'));
+        });
+    </script>
+    <!-- /信息提示:脚本 -->
+</body>
+</html>

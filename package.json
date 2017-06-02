@@ -1,0 +1,23 @@
+{
+  "name": "works",
+  "version": "1.0.0",
+  "description": "gulp for works",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenxiaoqi",
+  "license": "rew3c",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.4.0"
+  }
+}

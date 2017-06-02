@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"门户网站"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>数据采集</h4>
+            </div>
+            @@include('include/_datanav.html',{"var1":"class=\"active\""})
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <label>等级：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>核心媒体</a>
+                            <a>一级媒体</a>
+                            <a>二级媒体</a>
+                            <a>三级媒体</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>地区：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>中央</a>
+                            <a>省市</a>
+                            <a>区县</a>
+                            <a>其他</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>状态：</label>
+                        <div class="filter-option">
+                            <a class="selected">全部</a>
+                            <a>开启</a>
+                            <a>关闭</a>
+                        </div>
+                    </li>
+                    <li>
+                        <label>名称：</label>
+                        <div class="filter-option">
+                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                            <button class="u-btn xlesser" type="reset">重置</button>
+                            <a class="u-btn xlesser jsx-openwin" data-target="#win-add">新增门户网站</a>
+                            <a class="u-btn xlesser">批量删除</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck"><input type="checkbox" /></th>
+                            <th style="width:25%;">网站名称</th>
+                            <th style="width:30%;">网页地址</th>
+                            <th>采集频率</th>
+                            <th>等级</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id1" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id1">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id1-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a href="数据采集-配置.html">配置</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id1-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a href="数据采集-配置.html">配置</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr class="selected">
+                                            <td class="xcheck"><input type="checkbox" checked /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id2" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id2">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id2-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a href="数据采集-配置.html">配置</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id2-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a href="数据采集-配置.html">配置</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a href="数据采集-配置.html">配置</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id3" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id3">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id3-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id3-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id4" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id4">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id4-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id4-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id5" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id5">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                        <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id5-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id5-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id6" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id6">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id6-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id6-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id7" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id7">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id7-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id7-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id8" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id8">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id8-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id8-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id9" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id9">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id9-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id9-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="xbox" colspan="6">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <td class="xcheck"><input type="checkbox" /></td>
+                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id10" data-animate="false"><i class="ico ico-collapse"></i></a>网易新闻</td>
+                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                            <td>10次/日</td>
+                                            <td>一级媒体</td>
+                                            <td>
+                                                <a>修改</a>
+                                                <a>删除</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="collapse" id="id10">
+                                        <tr>
+                                            <td class="xbox" colspan="6">
+                                                <table class="m-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;"><a class="collapsed jsx-collapse" data-target="#id10-1" data-animate="false"><i class="ico ico-collapse"></i></a>财经</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="collapse" id="id10-1">
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经1</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="xcheck"><input type="checkbox" /></td>
+                                                            <td style="width:25%;">财经2</td>
+                                                            <td style="width:30%;"><a>http://weibo.com/beijingweibo.com/bo.com</a></td>
+                                                            <td>10次/日</td>
+                                                            <td>一级媒体</td>
+                                                            <td>
+                                                                <a>修改</a>
+                                                                <a>开启</a>
+                                                                <a>删除</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @@include('include/_pagination.html')
+        </div>
+    </div>
+    <!-- /主体 -->
+
+    <!-- 窗体 -->
+    <div class="m-win jsx-win" id="win-add">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>新增门户网站</h4>
+        </div>
+        <div class="win-body">
+            <!-- tab按钮 -->
+            <div class="m-txttab jsx-tabnav" data-type="button">
+                <a class="active" data-target="#tab-site">网站</a>
+                <a data-target="#tab-section">栏目</a>
+            </div>
+            <!-- /tab按钮 -->
+
+            <!-- tab内容 -->
+            <div class="m-tabs">
+                <div class="tab-pane active" id="tab-site" style="height:392px;">
+                    <div class="m-form">
+                        <div>
+                            <label style="width:6em;"><b>*</b>网站名称：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>网站地址：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>网站等级：</label>
+                            <div>
+                                <select>
+                                    <option>核心媒体</option>
+                                    <option>一级媒体</option>
+                                    <option>二级媒体</option>
+                                    <option>三级媒体</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>所属地区：</label>
+                            <div>
+                                <select style="width:127px;">
+                                    <option></option>
+                                </select>
+                                <select style="width:127px;">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tab-section">
+                    <div class="m-form">
+                        <div>
+                            <label style="width:6em;"><b>*</b>栏目名称：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>栏目地址：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>所属网站：</label>
+                            <div>
+                                <select>
+                                    <option>网易新闻</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>采集频率：</label>
+                            <div>
+                                <select style="width:35%;">
+                                    <option>每小时</option>
+                                </select>
+                                <input style="width:30%;" type="text" />
+                                <span>&nbsp;次<span class="t-lightgray">(1~10次)</span></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label><b>*</b>线程数：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>深度：</label>
+                            <div><input type="text" /></div>
+                        </div>
+                        <div>
+                            <label><b>*</b>开始时间：</label>
+                            <div>
+                                <div class="c-date"><input class="js-datepicker" type="text" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /tab内容 -->
+        </div>
+        <div class="win-footer">
+            <a class="u-btn xprimary js-win-close">确定</a>
+            <a class="u-btn xlesser js-win-close">取消</a>
+        </div>
+    </div>
+    <!-- /窗体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

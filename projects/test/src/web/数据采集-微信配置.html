@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"采集分析"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box hasfixer">
+            <div class="m-title">
+                <h4>配置信息</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-formbox">
+                <div class="m-form xxlarge">
+                    <div>
+                        <label style="width:6em;"><b>*</b>栏目名称：</label>
+                        <div><input type="text" /></div>
+                        <label style="width:7em;"><b>*</b>栏目地址：</label>
+                        <div><input type="text" /></div>
+                        <label style="width:7em;">采集模板：</label>
+                        <div>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label>过滤规则：</label>
+                        <div><input type="text" /></div>
+                        <label>是否分页：</label>
+                        <div>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                        <label>分页规则：</label>
+                        <div>
+                            <input type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="m-form xxlarge">
+                    <div>
+                        <label style="width:6em;">线程数：</label>
+                        <div>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                        <label style="width:7em;">抓取间隔：</label>
+                        <div>
+                            <input style="width:89%;" type="text" />
+                            <span>ms</span>
+                        </div>
+                        <label style="width:7em;">爬取深度：</label>
+                        <div>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                        <label style="width:7em;">爬取间隔：</label>
+                        <div>
+                            <input style="width:89%;" type="text" />
+                            <span>ms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-form xxlarge">
+                    <div>
+                        <label style="width:6em;">请求头：</label>
+                        <div><input type="text" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-subtitle">抓取元素配置</div>
+            <ul class="m-setting col4">
+                <li>
+                    <div>
+                        <label>元素id：</label>
+                        <input type="text" />
+                        <label>爬取规则：</label>
+                        <input type="text" />
+                        <label>正&nbsp;则：</label>
+                        <select>
+                            <option></option>
+                        </select>
+                        <label>截&nbsp;取：</label>
+                        <input type="text" />
+                    </div>
+                    <a class="ico ico-remove"></a>
+                </li>
+                <li>
+                    <div>
+                        <label>元素id：</label>
+                        <input type="text" />
+                        <label>爬取规则：</label>
+                        <input type="text" />
+                        <label>正&nbsp;则：</label>
+                        <select>
+                            <option></option>
+                        </select>
+                        <label>截&nbsp;取：</label>
+                        <input type="text" />
+                    </div>
+                    <a class="ico ico-add"></a>
+                </li>
+            </ul>
+
+            <div class="m-fixer jsx-fixer" data-position="bottom">
+                <a class="u-btn xprimary">保存</a>
+                <a class="u-btn xlesser">取消</a>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>
