@@ -38,13 +38,11 @@ paths.scss = [paths.cssSrc + '**/*.+(css|scss)', '!' + paths.cssSrc + 'import/_s
 paths.cssDest = dest + 'static/css/';
 paths.icons = [paths.icoSrc + '*.*', paths.icoSrc + '.*.*'];
 paths.cssImport = paths.cssSrc + 'import/';
-paths.img = [src + 'static/images/**/*.*'];
+paths.img = [src + 'static/images/**/**'];
 paths.imgDest = dest + 'static/images/';
-paths.lib = [src + 'static/lib/**/*.*'];
+paths.lib = [src + 'static/lib/**/**'];
 paths.libDest = dest + 'static/lib/';
 paths.scriptDest = dest + 'static/js/';
-paths.renameSprite = [paths.icoSrc + '.*.*'];
-paths.staticSrc = paths.lib.concat(paths.img);
 paths.script = [src + 'static/js/'];
 paths.scriptBase = paths.script + 'base/';
 paths.scriptConcat = [paths.scriptBase + 'core.js', paths.scriptBase + 'base.js', paths.scriptBase + 'config.js', paths.scriptBase + 'common.js', paths.script + 'modules/**/*.js', paths.script + '*.js'];
@@ -118,15 +116,18 @@ var tasks = {
         var gtReg = /&gt;/g;
         return spriteData.css.pipe(replace(gtReg,'>')).pipe(gulp.dest(paths.cssImport));
     },
-    copy: function () {
-        gulp.src(paths.img).pipe(plumber()).pipe(changed(paths.imgDest)).pipe(gulp.dest(paths.imgDest)).pipe(reload({ stream: true }));
+    copyImgs: function () {
+        return gulp.src(paths.img).pipe(plumber()).pipe(changed(paths.imgDest)).pipe(gulp.dest(paths.imgDest)).pipe(reload({ stream: true }));
+    },
+    copyLib: function () {
         return gulp.src(paths.lib).pipe(plumber()).pipe(changed(paths.libDest)).pipe(gulp.dest(paths.libDest)).pipe(reload({ stream: true }));
     },
     script: function () {
         return gulp.src(paths.scriptConcat).pipe(concat('reui.js')).pipe(gulp.dest(paths.scriptDest)).pipe(reload({ stream: true }));
     },
     del: function (delpath) {
-
+        delpath = delpath.replace(/\\/g, '/').replace(src, dest);
+        del.sync(delpath);
     }
 };
 
@@ -162,14 +163,20 @@ gulp.task('sassAll', ['sprite'], function () {
 
 // 任务:浏览器自动刷新
 // ------------------------------
-gulp.task('server', ['sassAll', 'script', 'copy', 'html'], function () {
+gulp.task('server', ['sassAll', 'script', 'copyImgs', 'copyLib', 'html'], function () {
     tasks.server();
 });
 
-// 任务:复制静态文件
+// 任务:复制图片文件
 // ------------------------------
-gulp.task('copy', function () {
-    return tasks.copy();
+gulp.task('copyImgs', function () {
+    return tasks.copyImgs();
+});
+
+// 任务:复制Lib库文件
+// ------------------------------
+gulp.task('copyLib', function () {
+    return tasks.copyLib();
 });
 
 // 任务:脚本处理
@@ -181,30 +188,48 @@ gulp.task('script', function () {
 // 任务：监控src目录文件的变动
 // ------------------------------
 gulp.task('watch', function () {
+    var taskHandler = function (event, callback) {
+        if (event.type == 'deleted') {
+            tasks.del(event.path);
+        } else {
+            callback();
+        }
+    };
+
     // 监控：html文件的改变
     // ------------------------------
-    gulp.watch(paths.html, ['html']);
+    gulp.watch(paths.html, function (event) {
+        taskHandler(event, tasks.include);
+    });
 
-    // 监控：include文件发生改变，重新生成html
-    // ------------------------------------------------------------
+    // 监控：include文件改变
+    // ------------------------------
     gulp.watch(paths.include, function () {
         return tasks.include(true);
     });
 
-    // 监控：scss文件发生改变,重新生成main.css
-    // ------------------------------------------------------------
+    // 监控：scss文件改变
+    // ------------------------------
     gulp.watch(paths.scss, ['sass']);
 
-    // 监控：图标文件发生改变，重新生成雪碧图及main.css
-    // ------------------------------------------------------------
+    // 监控：图标改变
+    // ------------------------------
     gulp.watch(paths.icons, ['sassAll']);
 
-    // 监控：静态资源发生变化，将变化文件复制到对应文件夹
-    // ------------------------------------------------------------
-    gulp.watch(paths.staticSrc, ['copy']);
+    // 监控：图片变化
+    // ------------------------------
+    gulp.watch(paths.img, function (event) {
+        taskHandler(event, tasks.copyImgs);
+    });
 
-    // 监控：脚本文件发生变化，重新合并及处理脚本
-    // ------------------------------------------------------------
+    // 监控：lib变化
+    // ------------------------------
+    gulp.watch(paths.lib, function (event) {
+        taskHandler(event, tasks.copyLib);
+    });
+
+    // 监控：脚本变化
+    // ------------------------------
     gulp.watch(paths.scriptAll, ['script']);
 });
 

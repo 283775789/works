@@ -839,8 +839,8 @@ table .ico { margin-left:5px; }
 .m-win .m-tablebox { max-width:none; max-height:500px; overflow-y:auto; }
 
 /* 垂直滚动容器 */
-.m-yscroll { max-height:300px; overflow-y:auto; }
-.m-form .m-yscroll { max-height:200px; border:1px solid #b2c1d0; }
+.m-yscroll { max-height:500px; overflow-y:auto; }
+.m-form .m-yscroll { height:200px; border:1px solid #b2c1d0; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */

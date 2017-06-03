@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"机构管理"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var7":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>本出版社信息</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <div class="filter-option">
+                            <label>开始时间：</label>
+                            <div class="c-date w-form4"><input class="js-datepicker" type="text"></div>
+                            <label>结束时间：</label>
+                            <div class="c-date w-form4"><input class="js-datepicker" type="text"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="filter-option">
+                            <label class="xws">关&nbsp;键&nbsp;词：</label>
+                            <input class="w-form4" type="text" placeholder="请输入关键词" />
+                            <label class="xws">来&nbsp;&nbsp;&nbsp;&nbsp;源：</label>
+                            <select class="w-form4 js-selectmain">
+                                <option value="1">门户.媒体</option>
+                                <option value="2">微博</option>
+                                <option value="3">微信</option>
+                            </select>
+                            <button class="u-btn xprimary" type="submit">搜索</button>
+                            <button class="u-btn xlesser" type="reset">重置</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="js-main">
+                <!-- 门户网站 -->
+                <div>
+                    <div class="m-tablebox">
+                        <table class="m-table xcutoff">
+                            <thead>
+                                <tr>
+                                    <th class="xno">排序</th>
+                                    <th style="width:10%;">微博热度</th>
+                                    <th>发布人</th>
+                                    <th style="width:30%;">微博内容</th>
+                                    <th>评论量</th>
+                                    <th>转发量</th>
+                                    <th>点赞量</th>
+                                    <th>发布时间</th>
+                                    <th>微博趋势</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">1</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td>愚-言</td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id1" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id1">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">2</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id2" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id2">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">3</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>瑞典首都中心一出版社收到“詐彈”恐嚇</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id3" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id3">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">4</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>2015年全国教师暑期阅读推荐书目</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id4" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id4">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">5</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>国家一级出版社，15年快捷出版社约稿通知</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id5" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id5">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">6</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>首家24小时书店开业 成都“书虫”从此无眠</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id6" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id6">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">7</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>广东出版业逆势增收,但畅销书不足</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id7" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id7">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">8</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>“书虫经济”烧热文化圈 四川怎么搭好这趟车</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id8" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id8">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">9</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>2014年度“大众喜爱的50种图书” 川版书占3席</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id9" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id9">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="xbox" colspan="8">
+                                        <table class="m-table">
+                                            <thead>
+                                                <tr>
+                                                    <td class="xno">10</td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>北京图书订货会开幕 四川出版盛装亮相</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"><a class="collapsed jsx-collapse" data-target="#id10" data-animate="false">折叠</a></td>
+                                                    <td style="width:10%;"><a class="jsx-openwin" data-target="#win1">趋势图</a></td>
+                                                    <td style="width:10%;"><a>塑源分析</a></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="collapse" id="id10">
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.62</td>
+                                                    <td><a>305种优秀图书将在书博会上让你大饱眼福</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>书博会上大量优秀图书将被被推出</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="xno"></td>
+                                                    <td style="width:10%;">7.60</td>
+                                                    <td><a>好书哪里找，书博会上瞅一瞅</a></td>
+                                                    <td style="width:10%;">网易新闻</td>
+                                                    <td style="width:10%;">2015-07-26</td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                    <td style="width:10%;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @@include('include/_pagination.html')
+
+                    <div>
+                        <div class="m-title">
+                            <h4>本社资讯热词分析</h4>
+                        </div>
+
+                        <div class="m-hotword">
+                            <img src="../static/images/demo/hotword2.png" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /门户网站 -->
+                <!-- 微博 -->
+                <div class="hide">
+                    <div class="m-tablebox">
+                        <table class="m-table xcutoff">
+                            <thead>
+                                <tr>
+                                    <th class="xno">排序</th>
+                                    <th style="width:10%;">微博热度</th>
+                                    <th style="width:9%;">发布人</th>
+                                    <th>标题</th>
+                                    <th style="width:8%;">评论量</th>
+                                    <th style="width:8%;">转发量</th>
+                                    <th style="width:8%;">点赞量</th>
+                                    <th style="width:12%;">发布时间</th>
+                                    <th style="width:9%;">微博趋势</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>7.62</td>
+                                    <td>愚-言</td>
+                                    <td>最喜XXX出版社的书啦，包装很精美</td>
+                                    <td>25000</td>
+                                    <td>25000</td>
+                                    <td>25000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>7.62</td>
+                                    <td>人民网</td>
+                                    <td>XXX出版社的《反脆弱：从不确定性中收益》，真的很好看</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>21000</td>
+                                    <td>2015-07-26</td>
+                                    <td><a class="jsx-openwin" data-target="#win3">趋势图</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @@include('include/_pagination.html')
+
+                    <div>
+                        <div class="m-title">
+                            <h4>本社微博总体趋势分析</h4>
+                        </div>
+
+                        <div class="m-hotword">
+                            <img src="../static/images/demo/chart2.png" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="m-title">
+                            <h4>发布人活跃度</h4>
+                        </div>
+
+                        <div class="m-hotword">
+                            <img src="../static/images/demo/chart3.png" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="m-title">
+                            <h4>本社微博粉丝数趋势分析</h4>
+                        </div>
+
+                        <div class="m-hotword">
+                            <img src="../static/images/demo/chart4.png" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /微博 -->
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+
+    <!-- 窗体:门户网站趋势图 -->
+    <div class="m-win nofooter jsx-win" id="win1">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>单条新闻不同时间段热度指数变化趋势</h4>
+        </div>
+        <div class="win-body w-win4">
+            <div class="m-hotword">
+                <img src="../static/images/demo/chart5.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /窗体:门户网站趋势图 -->
+
+    <!-- 窗体:低保真？ -->
+    <div class="m-win nofooter jsx-win" id="win2">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>单条新闻不同时间段热度指数变化趋势</h4>
+        </div>
+        <div class="win-body w-win4">
+            <div class="m-hotword">
+                <img src="../static/images/demo/chart5.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /窗体:低保真？ -->
+
+    <!-- 窗体:微博趋势图 -->
+    <div class="m-win nofooter jsx-win" id="win3">
+        <div class="win-header">
+            <a class="shut js-win-close" title="关闭">×</a>
+            <h4>单条新闻不同时间段热度指数变化趋势</h4>
+        </div>
+        <div class="win-body w-win4">
+            <p>【中国萤火虫正面临灭绝 被拉到城市可能活不过3天[伤心]】去年一年，萤火虫展在全国20多个省市举办了100多场。这些展览使用的萤火虫从数万到数十万只不等。一场展览就是一场浩劫，3天内萤火虫的死亡率是60％。10年前的学术会议上，专家就已达成共识：中国萤火虫正面临灭绝的危险。<a>全文:http://weibo.com/ttarticle/p/show</a></p>
+            <div class="m-hotword">
+                <img src="../static/images/demo/chart6.png" />
+            </div>
+        </div>
+    </div>
+    <!-- /窗体:微博趋势图 -->
+
+    <script>
+        // 仅演示
+        $('.js-selectmain').change(function () {
+            var value = $(this).val();
+
+            $('.js-main > div').eq(value - 1).removeClass('hide').siblings().addClass('hide');
+        });
+    </script>
+</body>
+</html>
