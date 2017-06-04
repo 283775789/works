@@ -5,3 +5,4 @@ projects/**/_sprite.scss
 # folder:
 projects/*/dist/
 node_modules/
+**/.vs/
