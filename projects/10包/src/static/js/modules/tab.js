@@ -36,71 +36,16 @@
     // 方法:生成more菜单
     // ------------------------------
     Tab.prototype.createMore = function () {
-        //var $tab = this.$,
-        //    type=$tab.data('type'),
-        //    tabWidth = $tab.outerWidth(),
-        //    width = 0,
-        //    $oldMore = $tab.find('.js-more'),
-        //    $oldMoreLinks = $oldMore.find('div > a'),
-        //    $more = $(reui.templete.tabMore),
-        //    $moreBody = $more.find('div'),
-        //    more = false;
-
-        //// 如果类型是按钮式tab，不生成more菜单
-        //if (type == 'button') return;
-
-        //// 删除存在的more
-        //$oldMore.remove();
-        //$tab.append($oldMoreLinks);
-
-        //var $tabLinks = $tab.find('a');
-
-        //$tabLinks.each(function () {
-        //    var $this = $(this);
-
-        //    width += $this.outerWidth();
-
-        //    if (tabWidth- width < 60) {
-        //        more = true;
-        //        $this.appendTo($moreBody);
-        //    }
-        //});
-
-        //if ($more.find('a.active').length > 0) {
-        //    $more.addClass('active');
-        //}
-
-        //if (more) {
-        //    $tab.append($more);
-        //}
     };
 
     // 方法:显示more菜单
     // ------------------------------
     Tab.prototype.showMore = function ($moreBtn) {
-        //var $more = $moreBtn.parent(),
-        //    $moreBody = $more.find('div'),
-        //    speed = this.speed();
-
-        //$moreBody.stop().slideToggle(speed);
-        //this.hideMore($moreBody);
     };
 
     // 方法:隐藏more菜单
     // -----------------------------------
     Tab.prototype.hideMore = function ($moreBody) {
-        //var me = this;
-
-        //$(document).one('click.reui.tab.more', function (event) {
-        //    var $target = $(event.target).parent().find(' > div');
-
-        //    if ($target.is($moreBody)) {
-        //        me.hideMore($moreBody);
-        //        return;
-        //    }
-
-        //    $moreBody.stop().slideUp(speed);
-        //});
     };
 
     // 方法:显示tab

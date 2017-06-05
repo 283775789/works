@@ -39,8 +39,8 @@
 .m-win.max a.max:after { display: block; }
 
 /* 窗体:高度全屏 */
-.m-win.yfull { top: 0 !important; bottom: 0; width: 90%; height: 100%; }
-.m-win.yfull > .win-body { position: absolute; top: 40px; bottom: 76px; width: 100%; padding: 20px; overflow: auto; }
+.m-win.yfull { top: 0 !important; bottom: 0; width: 1000px; height: 100%; }
+.m-win.yfull > .win-body { position: absolute; top: 40px; bottom: 0; width: 100%; padding: 20px; overflow: auto; }
 
 /* 窗体:信息提示 */
 .m-win.info > .win-body { position: relative; width: 480px; padding: 50px 45px; margin-bottom: -20px; font-size: 0; text-align: center; white-space: nowrap; word-wrap: normal; }

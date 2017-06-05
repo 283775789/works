@@ -76,7 +76,7 @@
 .disabled { filter:alpha(opacity=40); opacity:.4; }
 .u-btn { display:inline-block; min-width:90px; padding:0 15px; line-height:34px; font-size:14px; border-radius:3px; border-style:none; text-align:center; vertical-align:middle; }
 .u-btn:focus { outline:none; }
-.u-btn.xprimary { background:#00b89a; color:#fff; }
+.u-btn.xprimary { line-height:36px; background:#00b89a; color:#fff; }
 .u-btn.xprimary:hover { background: #00a58a; }
 .u-btn.xprimary.xdone { background:#fff; color:#436e99; border:1px solid #9bb4cc; }
 .u-btn.xlesser { background:#fff; color:#436e99; border:1px solid #9bb4cc; }
@@ -158,6 +158,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-subtitle.xsolid { padding-bottom:15px; margin-bottom:20px; border-bottom:1px solid #cbd8e4; }
 .m-subtitle .m-txttab { display:inline-block; margin-left:20px; margin-bottom:0; vertical-align:middle; }
 .m-subtitle.xsmb { margin-bottom:5px; }
+.m-subtitle.xbt { margin-top:20px; padding-top:20px; border-top:1px dashed #cbd8e4 }
 
 .m-subtitle select { height:30px; line-height:28px; }
 .m-subtitle .m-txttab > a { font-size:14px; }
@@ -261,6 +262,8 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-txttab > a + a:before { content:"/"; margin:0 10px; font-weight:bold; color:#808080; }
 .m-win .m-txttab { margin-top:20px; }
 
+.m-txttab.xnomt { margin-top:0 !important; }
+
 /* 虚线tab */
 .m-dashtab { margin-bottom:15px; border-bottom:1px dashed #cbd8e4; }
 .m-dashtab:after { content:" "; display:block; width:0; height:0; font-size:0; clear:both; }
@@ -287,6 +290,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-form select + select,
 .m-form select +  input[type="text"] { margin-left:6px; }
 .m-form label { text-align:right; }
+.m-form .xws { word-spacing:.2em; }
 
 .m-form .xerror { border-color:#f00; }
 .m-form .form-error { color:#fc4646; }
@@ -504,6 +508,9 @@ input[type="checkbox"] { width:15px; height:15px; }
 
 .m-card + .m-expander { margin-top:-10px; }
 
+/* 表单展示 */
+.m-cells.xform > li > div:first-child { text-align:right; padding-right:1.5em; }
+
 /* 图表容器 */
 .u-contitle { margin:0 0 10px;  font-size:18px; text-align:center; }
 .u-charttitle { margin:15px 0 5px; font-size:18px; text-align:center; }
@@ -523,6 +530,11 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-sorttable a { color:#00a187; }
 .m-sorttable a + a { margin-left:10px; }
 .m-sorttable a:hover { text-decoration:underline; }
+
+.m-sorttable.xbb th,
+.m-sorttable.xbb td { padding:10px 6px; border-bottom:1px dashed #cbd8e4; vertical-align:top; }
+.m-sorttable.xbb td > div { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.m-sorttable.xbb td:last-child { text-align:right; }
 
 table th.xsort { cursor:pointer; }
 table .ico { margin-left:5px; }
@@ -658,9 +670,12 @@ table .ico { margin-left:5px; }
 .g-box + .m-card,
 .g-box + .m-cells { margin-top:10px; }
 
-/* 图书简介 */
-.m-bookinfo { padding:10px 20px; border:3px solid #d1d5d8; }
+/* 图书简介及作者简介 */
+.m-bookinfo,
+.m-authinfo { padding:10px 20px; border:3px solid #d1d5d8; }
+.m-authinfo > p,
 .m-bookinfo > p { margin:0; line-height:1.75; font-size:12px; text-indent:2em; }
+.m-authinfo > p { margin-bottom:15px; text-indent:0; }
 
 /* 图表说明 */
 .m-chartnote { padding:10px 20px; margin-bottom:10px; font-size:12px; background:#eef4f7; }
@@ -683,6 +698,9 @@ table .ico { margin-left:5px; }
 .m-booklist > div { padding-top:40px; padding-bottom:41px; }
 .m-booklist.xsyp { margin-top:0; }
 .m-booklist.xsyp > div { padding-top:20px; padding-bottom:20px; }
+.booklist-bookinfo { height:80px; padding:10px 20px; margin-top:20px; font-size:12px; background:#eef4f7; color:#808080; }
+
+.m-booklist.xsmp > div { padding-top:30px; padding-bottom:31px; }
 
 /* 内容头部 */
 .m-bodyheader { margin-bottom:10px; text-align:right; }
@@ -713,6 +731,21 @@ table .ico { margin-left:5px; }
 /* 垂直滚动容器 */
 .m-yscroll { max-height:500px; overflow-y:auto; }
 .m-form .m-yscroll { height:200px; border:1px solid #b2c1d0; }
+
+/* 日期:小 */
+.c-date.xsmall input[type="text"] { height:30px; width:120px; line-height:28px; font-size:12px; }
+.c-date.xsmall:after { top:8px; }
+
+/* 文章 */
+.m-artical > h3 { margin-bottom:10px; font-size:16px; text-align:center; }
+.artical-info { color:#666; text-align:center; }
+.artical-info > span { margin:0 8px; }
+.artical-body { margin:20px 0; }
+.artical-body > p { line-height:1.6; margin-bottom:10px; }
+.win-body .m-artical { max-height:480px; overflow-y:auto; }
+
+/* 主内容头部 */
+.m-mainheader { text-align:right; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
@@ -770,11 +803,9 @@ table .ico { margin-left:5px; }
 .w-form9 { }
 .w-form10 { }
 .w-cell1 { width:50px; }
-
 .w-win1 { }
 .w-win2 { }
 .w-win3 { }
 .w-win4 { width:800px; }
 .w-win5 { }
-
 .h-box3 { height:300px; }

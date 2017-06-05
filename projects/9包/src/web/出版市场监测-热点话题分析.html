@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"热点话题分析"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var2":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>热点话题分析</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <div class="filter-option">
+                            <label class="xws">书目类别：</label>
+                            <select class="w-form4 js-selectmain">
+                                <option value="1">全部</option>
+                            </select>
+                            <label class="xws">关&nbsp;键&nbsp;词：</label>
+                            <input class="w-form4" type="text" placeholder="请输入关键词" />
+                            <button class="u-btn xprimary" type="submit">搜索</button>
+                            <button class="u-btn xlesser" type="reset">重置</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-dashtab jsx-tabnav">
+                <a class="active" data-target="#tab-week">按周查看</a>
+                <a data-target="#tab-month">按月查看</a>
+                <a data-target="#tab-season">按季查看</a>
+                <a data-target="#tab-year">按年查看</a>
+            </div>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xno">排序</th>
+                            <th style="width:10%;">热点</th>
+                            <th>热度指数</th>
+                            <th>相关书目</th>
+                            <th>相关资讯</th>
+                            <th>推荐时间</th>
+                            <th>操作</th>
+                            <th>选题报告</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a class="jsx-openwin" data-target="#win1">查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>中国发展</td>
+                            <td>1.1</td>
+                            <td><a>查看(18本)</a></td>
+                            <td><a>查看(10条)</a></td>
+                            <td>2017-02-22</td>
+                            <td><a>已关注</a></td>
+                            <td><a>创建</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @@include('include/_pagination.html')
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+
+    <div class="m-win yfull jsx-win" id="win1" data-move="false">
+        <div class="win-header">
+            <span class="win-close js-win-close" title="关闭"></span>
+            <h4>热点话题分析</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-subtitle">
+                <span>热度趋势图</span>
+            </div>
+            <div class="m-chartbox xbt">
+                <img src="../static/images/demo/chart49.png" />
+            </div>
+
+            <div class="m-subtitle xbt">
+                <span>阶段演化</span>
+                <div class="subtitle-right">
+                    <label>时间:</label>
+                    <div class="c-date xsmall"><input class="js-datepicker" type="text" /></div>
+                    <label>至:</label>
+                    <div class="c-date xsmall"><input class="js-datepicker" type="text" /></div>
+                </div>
+            </div>
+            <div class="m-chartbox">
+                <img src="../static/images/demo/chart50.png" />
+            </div>
+
+            <div class="m-subtitle xbt">
+                <span>报道角度</span>
+                <div class="subtitle-right">
+                    <div class="m-txttab xnomt jsx-tabnav">
+                        <a class="active">近一天</a>
+                        <a>近三天</a>
+                        <a>近七天</a>
+                    </div>
+                </div>
+            </div>
+            <div class="m-chartbox">
+                <img src="../static/images/demo/chart51.png" />
+            </div>
+
+            <div class="m-subtitle xbt">
+                <span>热度趋势图</span>
+            </div>
+            <div class="m-chartbox xbt">
+                <img src="../static/images/demo/chart52.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
