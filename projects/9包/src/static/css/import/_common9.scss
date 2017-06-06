@@ -205,10 +205,13 @@ input[type="checkbox"] { width:15px; height:15px; }
 .filter-option > a:hover,
 .filter-option > a.selected { background:#80a8c1; color:#fff; }
 .filter-option > input[type="text"] + label,
+.filter-option > select + label,
 .filter-option > .c-date + label{ margin-left:6px; }
 .filter-option > .u-btn { margin-right:0; }
 .filter-option > .u-btn.xlesser { background:#fff; }
 .filter-option .xws { word-spacing:.2em; }
+
+.m-filter.xsmb { margin-bottom:5px; }
 
 /* 表格 */
 .m-tablebox { max-width:100%; overflow-x:auto; }
@@ -263,6 +266,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-win .m-txttab { margin-top:20px; }
 
 .m-txttab.xnomt { margin-top:0 !important; }
+.m-txttab.xnw { margin-bottom:0; margin-right:10px; display:inline-block; vertical-align:middle; }
 
 /* 虚线tab */
 .m-dashtab { margin-bottom:15px; border-bottom:1px dashed #cbd8e4; }
@@ -746,6 +750,9 @@ table .ico { margin-left:5px; }
 
 /* 主内容头部 */
 .m-mainheader { text-align:right; }
+
+/* 带间隔行 */
+.m-spaceline { margin-bottom:10px; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-@@include('include/_head.html',{"title":"图书详情"})
+@@include('include/_head.html',{"title":"本社分析页"})
 <body>
     @@include('include/_header.html')
     @@include('include/_nav.html',{"var2":"class=\"active\""})
@@ -8,11 +8,40 @@
     <div class="container g-body">
         <div class="g-box">
             <div class="m-title">
+                <h4>本社分析页</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter">
+                    <li>
+                        <div class="filter-option">
+                            <label class="xws">书目类别:</label>
+                            <select class="w-form3">
+                                <option>全部</option>
+                            </select>
+                            <label class="xws">书名:</label>
+                            <input class="w-form3" type="text" />
+                            <label class="xws">作者:</label>
+                            <input class="w-form3" type="text" />
+                            <label class="xws">ISBN:</label>
+                            <input class="w-form3" type="text" />
+                            <button class="u-btn xprimary" type="submit">搜索</button>
+                            <button class="u-btn xlesser" type="reset">重置</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="g-box">
+            <div class="m-title">
                 <h4>图书详情</h4>
                 <div class="title-right">
-                    <a class="u-btn xprimary">关注</a>
-                    <a class="u-btn xprimary xdone">已关注(状态演示，请删除)</a>
-                    <a class="u-btn xlesser">返回</a>
+                    <a class="u-btn xprimary">生成报告</a>
+                    <a class="u-btn xprimary">导出</a>
                 </div>
             </div>
 
@@ -170,6 +199,54 @@
 
         <div class="m-card xlp">
             <div class="m-subtitle">
+                <span>实体店销售分析</span>
+                <div class="subtitle-right">
+                    <div class="m-txttab jsx-tabnav">
+                        <a data-target="#tab-month">月维度</a>
+                        <a data-target="#tab-week">周维度</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-tabs">
+                <div class="tab-pane active" id="tab-month">
+                    <div class="t-lightgray">2016年9月，本版书在网店渠道的平均销量为52.03册，环比上升11.10册，同比上升8.70册。</div>
+                    <div class="m-chartbox xmt">
+                        <img src="../static/images/demo/chart13.png" />
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-week">
+                    周维度
+                </div>
+            </div>
+        </div>
+
+        <div class="m-card xlp">
+            <div class="m-subtitle">
+                <span>馆配销售分析</span>
+                <div class="subtitle-right">
+                    <div class="m-txttab jsx-tabnav">
+                        <a data-target="#tab-month">月维度</a>
+                        <a data-target="#tab-week">周维度</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-tabs">
+                <div class="tab-pane active" id="tab-month">
+                    <div class="t-lightgray">2016年9月，本版书在网店渠道的平均销量为52.03册，环比上升11.10册，同比上升8.70册。</div>
+                    <div class="m-chartbox xmt">
+                        <img src="../static/images/demo/chart13.png" />
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-week">
+                    周维度
+                </div>
+            </div>
+        </div>
+
+        <div class="m-card xlp">
+            <div class="m-subtitle">
                 <span>读者画像</span>
             </div>
 
@@ -186,6 +263,47 @@
                             <h4 class="u-charttitle">读者主要分布区域</h4>
                             <div class="m-chartbox">
                                 <img src="../static/images/demo/chart15.png">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="m-card xlp">
+            <div class="m-subtitle">
+                <span>网店折扣率</span>
+            </div>
+
+            <div class="m-expander">
+                <ul class="m-cells xspace">
+                    <li>
+                        <div>
+                            <table class="m-table">
+                                <thead>
+                                    <tr>
+                                        <th>书名</th>
+                                        <th>单价(元)</th>
+                                        <th>当当</th>
+                                        <th>亚马逊</th>
+                                        <th>京东</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>孔子的平凡世界</td>
+                                        <td>40.0</td>
+                                        <td>80%</td>
+                                        <td>75.75%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="xborder">
+                            <h4 class="u-charttitle">读者主要分布区域</h4>
+                            <div class="m-chartbox">
+                                <img src="../static/images/demo/chart56.png">
                             </div>
                         </div>
                     </li>
