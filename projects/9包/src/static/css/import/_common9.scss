@@ -81,8 +81,8 @@
 .u-btn.xprimary.xdone { background:#fff; color:#436e99; border:1px solid #9bb4cc; }
 .u-btn.xlesser { background:#fff; color:#436e99; border:1px solid #9bb4cc; }
 .u-btn.xlesser:hover { color: #00a187; border-color: #00b89a; }
-.u-btn.xstart { display:block; width:320px; line-height:38px; margin:50px auto 0; background:#4586d8; color:#fff; font-size:18px; border-radius:3px; }
-.u-btn.xstart:hover { background:#3475c7; }
+.u-btn.xstart { display:block; width:320px; line-height:38px; margin:50px auto 0; background:#00b89a; color:#fff; font-size:18px; border-radius:3px; }
+.u-btn.xstart:hover { background:#01a389; }
 .u-btn + .u-btn { margin-left:6px; }
 
 /* 文件上传 */
@@ -114,6 +114,11 @@
 .u-link.xcolor2 { background:#638fac; }
 
 .u-more { display:block; padding-top:18px; font-size:16px; color:#999; text-align:center; }
+
+/* 标签 */
+.u-tag2 { display:inline-block; padding:0 10px; line-height:35px; background:#fff; border:1px solid #ededed; }
+.u-tag2:hover,
+.u-tag2.selected { background:#668eb2; border-color:#668eb2; color:#fff; }
 
 /* ------------------------------ 表单控件 ------------------------------ */
 select,
@@ -200,7 +205,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-filter > li label { color:#808080; }
 .m-filter > li > label,
 .filter-option { display:inline-block; font-size:14px; vertical-align:top; white-space:normal; }
-.filter-option > a { display:inline-block; padding:0 10px; margin:5px 5px 5px 0; border-radius:2px; }
+.filter-option > a { position:relative; display:inline-block; padding:0 10px; margin:5px 5px 5px 0; border-radius:2px; }
 .filter-option > a.u-btn { margin-top:0; margin-bottom:0; }
 .filter-option > a:hover,
 .filter-option > a.selected { background:#80a8c1; color:#fff; }
@@ -212,6 +217,11 @@ input[type="checkbox"] { width:15px; height:15px; }
 .filter-option .xws { word-spacing:.2em; }
 
 .m-filter.xsmb { margin-bottom:5px; }
+.m-filter li.xlarge { line-height:30px; }
+.m-filter li.xlarge .filter-option > a { margin:5px 15px 10px 0; border:1px solid #80a8c1; }
+.m-filter li.xlarge .ico-del { position:absolute; top:-12px; right:-12px; }
+
+.m-filter.xmh { min-height:360px; }
 
 /* 表格 */
 .m-tablebox { max-width:100%; overflow-x:auto; }
@@ -261,7 +271,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-txttab { margin-bottom:20px; text-align:center; }
 .m-txttab > a { font-size:16px; color: #808080; }
 .m-txttab > a:hover,
-.m-txttab > a.active { color: #00a187; }
+.m-txttab > a.active { color: #387fd8; }
 .m-txttab > a + a:before { content:"/"; margin:0 10px; font-weight:bold; color:#808080; }
 .m-win .m-txttab { margin-top:20px; }
 
@@ -515,6 +525,15 @@ input[type="checkbox"] { width:15px; height:15px; }
 /* 表单展示 */
 .m-cells.xform > li > div:first-child { text-align:right; padding-right:1.5em; }
 
+/* 创建 */
+.m-cells.xnew  { margin-top:50px; }
+.m-cells.xnew .cells-col { position:relative; }
+.m-cells.xnew .ico-ar,
+.m-cells.xnew .ico-al { position:absolute; top:-40px; }
+.m-cells.xnew .xnew-left > .ico { right:0; }
+.m-cells.xnew .xnew-right > .ico { left:0; }
+
+
 /* 图表容器 */
 .u-contitle { margin:0 0 10px;  font-size:18px; text-align:center; }
 .u-charttitle { margin:15px 0 5px; font-size:18px; text-align:center; }
@@ -754,15 +773,24 @@ table .ico { margin-left:5px; }
 /* 带间隔行 */
 .m-spaceline { margin-bottom:10px; }
 
+/* 滑动内容 */
+.m-slidecon { position:relative; padding:10px 45px; }
+.m-slidecon .slidecon-body { white-space:nowrap; overflow:hidden; }
+.m-slidecon .slidecon-body-inner { display:inline-block; position:relative; }
+.m-slidecon > .ico { position:absolute; top:19px; }
+.m-slidecon > .ico-al2 { left:10px; }
+.m-slidecon > .ico-ar2 { right:10px; }
+.m-slidecon .slidecon-body-inner > .u-tag2 { margin-right:6px; }
+
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
-.p-start { background:#fff; }
-.p-start h2 { font-size:24px; margin:0 0 20px; text-align:center; }
-.start-note { margin-bottom:15px; font-size:16px; color:#999; text-align:center; }
+.p-start h2 { font-size:24px; margin:35px 0 25px; text-align:center; }
+.start-note { margin-left:20px; font-size:16px; color:#999; text-align:center; }
 
 .p-start .m-filter { background:#fff; }
-.p-start .m-filter > li { padding:25px 50px 20px; border-bottom:1px dashed #c8dae8; }
-.p-start .m-filter > li:first-child { border-top:1px dashed #c8dae8; }
+.p-start .m-filter > li { padding:25px 50px 20px 25px; }
+.p-start .m-filter > li + li { border-top:1px dashed #c8dae8; }
+.p-start .m-filter > li label { width:70px; }
 
 /* 分析页 */
 .p-analyse .container { position:relative; max-width:80%; }
