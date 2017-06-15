@@ -2,25 +2,38 @@
 <html lang="zh-CN">
 @@include('include/_head.html',{"title":"查看选题报告"})
 <body class="p-analyse">
-    <!-- 头部 -->
-    <div class="g-header">
-        <div class="container">
-            <div class="header-left">
-                <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
-            </div>
-            <div class="analyse-title">
-                <h2>选题报告</h2>
-                <div>提交人：张三   提交时间：2017年02月21日</div>
-            </div>
-            <a class="ico ico-download"></a>
-        </div>
-    </div>
-    <!-- /头部 -->
+    <div class="tab-content">
+        <div class="tab-pane active js-tab-xtbg">
+            <!-- 头部 -->
+            <div class="g-header">
+                <div class="container">
+                    <div class="header-left">
+                        <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
+                    </div>
+                    <div class="analyse-title">
+                        <h2>选题报告</h2>
+                        <div>提交人：张三   提交时间：2017年02月21日</div>
+                    </div>
 
-    <!-- 主体 -->
-    <div class="container g-body">
-        <div class="tab-content">
-            <div class="tab-pane active js-tab-xtbg">
+                    <div class="jsx-anchor">
+                        <a data-target="#nrjj">内容简介</a>
+                        <a data-target="#rdgk">热度概况</a>
+                        <a data-target="#bdqd">报道渠道</a>
+                        <a data-target="#mtfb">媒体分布</a>
+                        <a data-target="#bdjd">报道角度</a>
+                        <a data-target="#gdfx">读者评论分析</a>
+                        <a data-target="#zsfx">字数分析</a>
+                        <a data-target="#bdxs">报道形式</a>
+                        <a data-target="#lmfx">栏目分析</a>
+                    </div>
+
+                    <a class="ico ico-download"></a>
+                </div>
+            </div>
+            <!-- /头部 -->
+
+            <!-- 主体 -->
+            <div class="container g-body">
                 <div class="g-box xfp">
                     <div class="m-form xgray xfull xtext">
                         <div>
@@ -78,7 +91,40 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane js-tab-xtfx">
+            <!-- /主体 -->
+        </div>
+
+        <div class="tab-pane js-tab-xtfx">
+            <!-- 头部 -->
+            <div class="g-header">
+                <div class="container">
+                    <div class="header-left">
+                        <a class="header-logo"><img src="../static/images/logo.png" />新闻内容选题及评价系统</a>
+                    </div>
+                    <div class="analyse-title clearfix">
+                        <h2>选题报告</h2>
+                        <div>提交人：张三   提交时间：2017年02月21日</div>
+                    </div>
+
+                    <div class="text-left jsx-anchor">
+                        <a class="u-anchor" data-target="#nrjj">内容简介</a>
+                        <a class="u-anchor" data-target="#rdgk">热度概况</a>
+                        <a class="u-anchor" data-target="#bdqd">报道渠道</a>
+                        <a class="u-anchor" data-target="#mtfb">媒体分布</a>
+                        <a class="u-anchor" data-target="#bdjd">报道角度</a>
+                        <a class="u-anchor" data-target="#gdfx">读者评论分析</a>
+                        <a class="u-anchor" data-target="#zsfx">字数分析</a>
+                        <a class="u-anchor" data-target="#bdxs">报道形式</a>
+                        <a class="u-anchor" data-target="#lmfx">栏目分析</a>
+                    </div>
+
+                    <a class="ico ico-download"></a>
+                </div>
+            </div>
+            <!-- /头部 -->
+
+            <!-- 主体 -->
+            <div class="container g-body">
                 <div class="m-card" id="nrjj">
                     <div class="m-title">
                         <h4>内容简介</h4>
@@ -231,26 +277,9 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- 锚点 -->
-                <div>
-                    <ul class="m-anchor jsx-anchor">
-                        <li><a class="active" data-target="#nrjj">内容简介</a></li>
-                        <li><a data-target="#rdgk">热度概况</a></li>
-                        <li><a data-target="#bdqd">报道渠道</a></li>
-                        <li><a data-target="#mtfb">媒体分布</a></li>
-                        <li><a data-target="#bdjd">报道角度</a></li>
-                        <li><a data-target="#gdfx">读者评论分析</a></li>
-                        <li><a data-target="#zsfx">字数分析</a></li>
-                        <li><a data-target="#bdxs">报道形式</a></li>
-                        <li><a data-target="#lmfx">栏目分析</a></li>
-                    </ul>
-                </div>
-                <!-- /锚点 -->
             </div>
         </div>
     </div>
-    <!-- /主体 -->
 
     <!-- tab导航 -->
     <div class="m-anchor xtabnav jsx-tabnav">
@@ -265,7 +294,6 @@
         </ul>
     </div>
     <!-- /tab导航 -->
-
     @@include('include/_footer.html')
     @@include('include/_script.html')
 </body>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"采集分析"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box hasfixer">
+            <div class="m-title">
+                <h4>新建重大报道计划</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-btntab jsx-tabnav">
+                <a class="active" data-target="#tab1">智能模式</a>
+                <a data-target="#tab2">高级模式</a>
+            </div>
+
+            <div class="m-cells xbs xplan">
+                <div class="cells-col" style="width:60%;">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <div class="m-form xgray xfull">
+                                <div>
+                                    <label style="width:10em;">重大报道名称：</label>
+                                    <div><input type="text" /></div>
+                                </div>
+                            </div>
+                            <div class="m-form xbd">
+                                <div>
+                                    <label style="width:10em;">重大报道事件时间：</label>
+                                    <div>
+                                        <div class="c-date"><input class="js-datepicker" type="text"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="width:7em;">重大报道推荐时间：</label>
+                                    <div>
+                                        <div class="c-date"><input class="js-datepicker" type="text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-form xgray xfull">
+                                <div>
+                                    <label style="width:10em;">备注信息：</label>
+                                    <div><textarea style="height:150px;"></textarea></div>
+                                </div>
+                            </div>
+
+                            <div class="text-center" style="margin:30px 0;">
+                                <a class="u-btn xprimary">保存</a>
+                                <a class="u-btn xlesser">取消</a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab2">
+                            <div class="t-lightgray" style="margin-bottom:15px;">当前是高级模式（可设置50个字）</div>
+                            <div class="m-form xbd">
+                                <div>
+                                    <label style="width:6em;">方案名：</label>
+                                    <div>
+                                        <input type="text" placeholder="请输入系列名称" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="width:6em;">时间范围：</label>
+                                    <div>
+                                        <input class="w-form6" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-form xgray xfull">
+                                <div>
+                                    <label style="width:6em;">关键词：</label>
+                                    <div>
+                                        <textarea style="height:150px;" placeholder="词语之间用空格隔开"></textarea>
+                                        <p class="text-right t-lightgray">（总字数不超过50个，已输入0个字，还可以输入50个字）</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>排除词：</label>
+                                    <div>
+                                        <textarea style="height:150px;" placeholder="词语之间用空格隔开"></textarea>
+                                        <p class="text-right t-lightgray">（总字数不超过50个，已输入0个字，还可以输入50个字）</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-form xbd">
+                                <div>
+                                    <label style="width:6em;">新闻类别：</label>
+                                    <div>
+                                        <div class="m-checkbox">
+                                            <label><input type="checkbox" />全部</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技科技科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="width:6em;">地域选择：</label>
+                                    <div>
+                                        <div style="padding-bottom:5px;">
+                                            <a class="u-tag2 selected">北京(16)<i class="ico ico-del"></i></a>
+                                            <a class="ico ico-add2"></a>
+                                        </div>
+                                        <ul class="m-addrlist">
+                                            <li>
+                                                <label><input type="checkbox" />华东</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />华北</label>
+                                                <div class="m-addr selected">
+                                                    <label><input type="checkbox" checked />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />华中</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />华南</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />西北</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />西南</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label><input type="checkbox" />港澳台</label>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-addr">
+                                                    <label><input type="checkbox" />北京</label>
+                                                    <div class="addr-body">
+                                                        <label><input type="checkbox" />全部</label>
+                                                        <label><input type="checkbox" />西城区</label>
+                                                        <label><input type="checkbox" />朝阳区</label>
+                                                        <label><input type="checkbox" />海淀区</label>
+                                                        <label><input type="checkbox" />东城区</label>
+                                                        <label><input type="checkbox" />丰台区</label>
+                                                        <label><input type="checkbox" />石景山区</label>
+                                                        <label><input type="checkbox" />大兴区</label>
+                                                        <label><input type="checkbox" />昌平区</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>信息源选择：</label>
+                                    <div>
+                                        <div class="m-is">
+                                            <div class="is-value">请选择信息源</div>
+                                            <div class="is-body">
+                                                <div class="is-filter">
+                                                    <select>
+                                                        <option>微博</option>
+                                                    </select>
+                                                    <div class="u-search">
+                                                        <input type="text" placeholder="请输入搜索关键字">
+                                                        <a class="u-btn xprimary">搜索</a>
+                                                    </div>
+                                                </div>
+                                                <div class="is-subfilter">
+                                                    <a>一级媒体</a>
+                                                    <a>二级媒体</a>
+                                                    <a>三级媒体</a>
+                                                </div>
+                                                <div class="is-option">
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                    <label><input type="checkbox" />新华网</label>
+                                                    <label><input type="checkbox" />人民网</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cells-col">
+                    <div class="m-preview">
+                        <div class="m-subtitle">预览</div>
+                        <input type="text" value="重大报道名称，时间" style="width:100%;" />
+                        <div class="preview-body">
+                            <p>毛泽东诞生100周年</p>
+                            <h4>事件时间：</h4>
+                            <p>2017年09月21日</p>
+                            <h4>推荐事件：</h4>
+                            <p>2017年09月18日-2017年09月21日</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="t-lightgray">不是我想要的，请点击</span>
+                            <a class="u-btn xprimary">重新设置</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

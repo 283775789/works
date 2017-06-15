@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"电商图书榜单"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var2":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>电商图书分析</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <form>
+                <ul class="m-filter xsmb">
+                    <li>
+                        <div class="filter-option">
+                            <label class="xws">书目类别：</label>
+                            <select class="w-form4 js-selectmain">
+                                <option value="1">全部</option>
+                            </select>
+                            <label class="xws">来源：</label>
+                            <select class="w-form4 js-selectmain">
+                                <option value="1">亚马逊(国际)</option>
+                            </select>
+                            <button class="u-btn xprimary" type="submit">查看</button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="m-dashtab jsx-tabnav">
+                <a class="active">按周查看</a>
+                <a>按月查看</a>
+                <a>按季查看</a>
+                <a>按年查看</a>
+            </div>
+
+            <div class="m-spaceline clearfix">
+                <div class="pull-right">
+                    <div class="m-txttab xnw jsx-tabnav">
+                        <a class="active">热点榜</a>
+                        <a>热销榜</a>
+                        <a>热评榜</a>
+                    </div>
+                    <a class="u-btn xprimary">导出</a>
+                </div>
+            </div>
+
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xno">排序</th>
+                            <th style="width:10%;">热度指数</th>
+                            <th style="width:15%;">ISBN</th>
+                            <th style="width:30%;">书名</th>
+                            <th style="width:15%;">出版社</th>
+                            <th>作者</th>
+                            <th>查看</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>3.1</td>
+                            <td>9787121235832</td>
+                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                            <td>东方出版中心</td>
+                            <td>田自秉</td>
+                            <td><a>趋势图</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            @@include('include/_pagination.html')
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+
+    <div class="m-win yfull jsx-win" id="win1" data-move="false">
+        <div class="win-header">
+            <span class="win-close js-win-close" title="关闭"></span>
+            <h4><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></h4>
+        </div>
+        <div class="win-body">
+            <div class="g-box">
+                <div class="m-subtitle">
+                    <span>图书详情</span>
+                </div>
+
+                <div class="m-cells xbs">
+                    <div class="cells-col xbs-avgw">
+                        <div class="m-media xbd">
+                            <img class="media-left" src="../static/images/demo/bd1.png" />
+                            <div class="media-body">
+                                <h4>穷查理宝典：查理·芒格智慧箴言录</h4>
+                                <div>ISBN：978654321</div>
+                                <div>定价：￥28</div>
+                                <div>作者：【美】彼得·考夫曼</div>
+                                <div>译者：李继宏</div>
+                                <div>热度值：13</div>
+                                <div>出版社：中信出版集团股份有限公司</div>
+                                <div>出版时间：2017-01-01</div>
+                                <div>分类：出版社>学术文化>哲学</div>
+                                <div>热度值：13</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cells-col xbs-avgw">
+                        <div class="m-subtitle xsmb">图书简介：</div>
+                        <div class="m-bookinfo">
+                            <p>他是巴菲特的导师与人生合伙人！ </p>
+                            <p>他是当今最伟大的投资思想家！ </p>
+                            <p>理解商业社会、投资本质必读这一本！ </p>
+                            <p>首次收录了查理过去20年来主要的公开演讲，书中十一篇讲稿全面展现了这个传奇人物的聪明才智。 </p>
+                            <p>此外，“芒格主义：查理的即席谈话”一章收录的是他以往在伯克希尔•哈撒韦公司和西科金融公司年会上犀利和幽默的评论。</p>
+                            <p>贯穿全书的是芒格展示出来的聪慧、机智，其令人敬服的价值观和深不可测的修辞天赋。他拥有百科全书式的知识，所以从古代的雄辩家，到18、19世纪的欧洲文豪，再到当代的流行文化偶像，这些人的名言他都能信手拈来，并用这些来强调终身学习和保持求知欲望的好处。 </p>
+                            <p>一书首次完整、翔实、权威地披露了素来“以低调为乐”的投资大师查理•芒格的人生智慧，全书不仅为查理提及的人物、地点和其他内容配上了相关的信息、照片和其他图画，并配有漫画艺术家精心绘制的几十幅经典插画，值得收藏！</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-tablebox">
+                    <table class="m-table xautowidth xcenter xborder">
+                        <thead>
+                            <tr>
+                                <th>销售时间</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                                <th>201311</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>零售销量</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>44</td>
+                            </tr>
+                            <tr>
+                                <td>零售销量</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>网店销量</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="m-chartbox xmt">
+                    <img src="../static/images/demo/chart11.png" />
+                </div>
+            </div>
+
+            <div class="m-card xlp">
+                <div class="m-subtitle">
+                    <span>图书热度趋势图</span>
+                </div>
+
+                <div class="m-chartbox xmt">
+                    <img src="../static/images/demo/chart12.png" />
+                </div>
+            </div>
+
+            <div class="m-card xlp">
+                <div class="m-subtitle">
+                    <span>网店销售分析</span>
+                    <div class="subtitle-right">
+                        <div class="m-txttab jsx-tabnav">
+                            <a data-target="#tab-month">月维度</a>
+                            <a data-target="#tab-week">周维度</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-tabs">
+                    <div class="tab-pane active" id="tab-month">
+                        <div class="t-lightgray">2016年9月，本版书在网店渠道的平均销量为52.03册，环比上升11.10册，同比上升8.70册。</div>
+                        <div class="m-chartbox xmt">
+                            <img src="../static/images/demo/chart13.png" />
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-week">
+                        周维度
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-card xlp">
+                <div class="m-subtitle">
+                    <span>读者画像</span>
+                </div>
+
+                <div class="m-expander">
+                    <ul class="m-cells xspace">
+                        <li>
+                            <div class="xborder">
+                                <h4 class="u-charttitle">读者购买方式</h4>
+                                <div class="m-chartbox">
+                                    <img src="../static/images/demo/chart14.png">
+                                </div>
+                            </div>
+                            <div class="xborder">
+                                <h4 class="u-charttitle">读者主要分布区域</h4>
+                                <div class="m-chartbox">
+                                    <img src="../static/images/demo/chart15.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

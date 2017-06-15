@@ -782,6 +782,12 @@ table .ico { margin-left:5px; }
 .m-slidecon > .ico-ar2 { right:10px; }
 .m-slidecon .slidecon-body-inner > .u-tag2 { margin-right:6px; }
 
+/* 评论 */
+.m-remark { position:relative; padding:20px 0 10px 70px; border-bottom:1px dashed #ccc; }
+.remark-avatar { position:absolute; left:0; top:20px; }
+.remark-avatar > img { width:60px; height:60px; border:1px solid #ccc; border-radius:50%; }
+.remark-time { color:#999; }
+
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
 .p-start h2 { font-size:24px; margin:35px 0 25px; text-align:center; }

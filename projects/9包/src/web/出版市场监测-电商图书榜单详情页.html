@@ -42,123 +42,340 @@
             <div class="m-spaceline clearfix">
                 <div class="pull-right">
                     <div class="m-txttab xnw jsx-tabnav">
-                        <a class="active">热点榜</a>
-                        <a>热销榜</a>
-                        <a>热评榜</a>
+                        <a class="active" data-target="#tab1">热点榜</a>
+                        <a data-target="#tab2">热销榜</a>
+                        <a data-target="#tab3">热评榜</a>
                     </div>
                     <a class="u-btn xprimary">导出</a>
                 </div>
             </div>
 
-            <div class="m-tablebox">
-                <table class="m-table xcutoff">
-                    <thead>
-                        <tr>
-                            <th class="xno">排序</th>
-                            <th style="width:10%;">热度指数</th>
-                            <th style="width:15%;">ISBN</th>
-                            <th style="width:30%;">书名</th>
-                            <th style="width:15%;">出版社</th>
-                            <th>作者</th>
-                            <th>查看</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>3.1</td>
-                            <td>9787121235832</td>
-                            <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
-                            <td>东方出版中心</td>
-                            <td>田自秉</td>
-                            <td><a>趋势图</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="m-tabs">
+                <div class="tab-pane active" id="tab1">
+                    <div class="m-tablebox">
+                        <table class="m-table xcutoff">
+                            <thead>
+                                <tr>
+                                    <th class="xno">排序</th>
+                                    <th style="width:10%;">热度指数</th>
+                                    <th style="width:15%;">ISBN</th>
+                                    <th style="width:30%;">书名</th>
+                                    <th style="width:15%;">出版社</th>
+                                    <th>作者</th>
+                                    <th>查看</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>3.1</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>东方出版中心</td>
+                                    <td>田自秉</td>
+                                    <td><a>趋势图</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-            @@include('include/_pagination.html')
+                    @@include('include/_pagination.html')
+                </div>
+
+                <div class="tab-pane" id="tab3">
+                    <div class="m-tablebox">
+                        <table class="m-table xcutoff">
+                            <thead>
+                                <tr>
+                                    <th class="xno">排序</th>
+                                    <th style="width:10%;">评论数</th>
+                                    <th style="width:10%;">ISBN</th>
+                                    <th style="width:20%;">书名</th>
+                                    <th>作者</th>
+                                    <th style="width:10%;">出版社</th>
+                                    <th>评分</th>
+                                    <th style="width:15%;">查看</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>24125</td>
+                                    <td>9787121235832</td>
+                                    <td><a class="jsx-openwin" data-target="#win1">《中国工艺美术史（修订本）》</a></td>
+                                    <td>田自秉</td>
+                                    <td>东方出版中心</td>
+                                    <td>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                        <i class="ico ico-star"></i>
+                                    </td>
+                                    <td>
+                                        <a>趋势图</a>
+                                        <a class="jsx-openwin" data-target="#remark">评论详情</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @@include('include/_pagination.html')
+                </div>
+            </div>
         </div>
     </div>
     <!-- /主体 -->
@@ -350,6 +567,37 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-win yfull jsx-win" id="remark" data-move="false">
+        <div class="win-header">
+            <span class="win-close js-win-close" title="关闭"></span>
+            <h4>评论详情(30条)</h4>
+        </div>
+        <div class="win-body">
+            <div class="m-remark">
+                <div class="remark-avatar">
+                    <img src="../static/images/demo/avatar2.png" />
+                </div>
+                <div>
+                    <div class="remark-time">2017-06-01</div>
+                    <p>
+                        评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容
+                    </p>
+                </div>
+            </div>
+            <div class="m-remark">
+                <div class="remark-avatar">
+                    <img src="../static/images/demo/avatar3.png" />
+                </div>
+                <div>
+                    <div class="remark-time">2017-06-01</div>
+                    <p>
+                        评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容
+                    </p>
                 </div>
             </div>
         </div>
