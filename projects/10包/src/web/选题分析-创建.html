@@ -16,8 +16,9 @@
 
             <div class="m-subtitle">选题报告</div>
 
-            <div class="m-cells xbs xhasbg">
-                <div class="cells-col xbs-avgw">
+            <div class="m-cells xbs xhasbg xnew">
+                <div class="cells-col xbs-avgw xnew-left js-leftcon">
+                    <a class="ico ico-ar js-ar"></a>
                     <div class="m-form xgray xfull">
                         <div>
                             <label style="width:10em;"><b>*</b>名称：</label>
@@ -90,7 +91,8 @@
                         <a class="u-btn xlesser">取消</a>
                     </div>
                 </div>
-                <div class="cells-col">
+                <div class="cells-col  xnew-right js-rightcon">
+                    <a class="ico ico-al js-al"></a>
                     <div class="m-filter3">
                         <input class="w-form5" type="text" placeholder="请输入关键词进行检索" />
                         <select class="w-form3">
@@ -131,8 +133,7 @@
                             </div>
                         </div>
                     </div>
-
-
+                    
                     <div class="m-card xsmall" style="margin-top:10px;">
                         <div class="m-subtitle">
                             <span>热度趋势</span>
@@ -170,5 +171,74 @@
     <!-- /主体 -->
     @@include('include/_footer.html')
     @@include('include/_script.html')
+    <script>
+        // 展开左边内容
+        $('.js-ar').on('click', function () {
+            var $this = $(this),
+                $leftCon = $('.js-leftcon'),
+                $rightCon = $('.js-rightcon');
+
+            if ($this.hasClass('ico-ar')) {
+                $leftCon.animate({ 'borderRightWidth': 0 }, 300);
+
+                $rightCon.animate({ width: 0 }, 300, function () {
+                    $(this).hide();
+                });
+
+                $this.attr('class', 'ico ico-al');
+            } else {
+                $leftCon.animate({ 'borderRightWidth': '10px' }, 300);
+
+                $rightCon.show().animate({ width: '50%' }, 300);
+
+                $this.attr('class', 'ico ico-ar');
+            }
+        });
+
+        // 展开右边内容
+        $('.js-al').on('click', function () {
+            var $this = $(this),
+                $leftCon = $('.js-leftcon'),
+                $rightCon = $('.js-rightcon');
+
+            if ($this.hasClass('ico-al')) {
+                $rightCon.animate({ 'borderLeftWidth': 0 }, 300);
+
+                $leftCon.animate({ width: 0 }, 300, function () {
+                    $(this).hide();
+                });
+
+                $this.attr('class', 'ico ico-ar');
+            } else {
+                $rightCon.animate({ 'borderLeftWidth': '10px' }, 300);
+
+                $leftCon.show().animate({ width: '50%' }, 300);
+
+                $this.attr('class', 'ico ico-al');
+            }
+        });
+
+        // 左滑动
+        $('.js-sal').on('click', function () {
+            var $sinner = $('.js-sinner');
+            var left = parseInt($sinner.css('left')) + 100;
+
+            if (left >= 0) left=0;
+
+            $sinner.animate({ left: left }, 200);
+        });
+
+        // 右滑动
+        $('.js-sar').on('click', function () {
+            var $sinner = $('.js-sinner');
+            var selfWidth = $sinner.outerWidth();
+            var width = $sinner.parent().outerWidth();
+            var left = parseInt($sinner.css('left')) - 100;
+
+            if (selfWidth + left < width-100) return;
+
+            $sinner.animate({ left: left}, 200);
+        });
+    </script>
 </body>
 </html>
