@@ -19,7 +19,7 @@
 .g-header.xstart .header-logo { font-size:16px; color:#999; }
 
 /* 导航 */
-.g-nav { position:relative; z-index:1; margin-bottom:20px; background: #3e5d7d; }
+.g-nav { position:relative; z-index:10; margin-bottom:20px; background: #3e5d7d; }
 .nav-body { white-space:nowrap; }
 .nav-body > li { position: relative; display: inline-block; vertical-align:top; }
 .nav-body > li:hover,
@@ -460,7 +460,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-cells.xsummary { padding:5px; }
 .m-cells.xsummary > div { padding:5px; text-align: center; overflow: hidden; }
 .xsummary-item { padding:5px; }
-.xsummary-item > h4 { margin: 5px 0; padding:0 5px; font-size: 14px; color: #fff; text-align:left; }
+.xsummary-item > h4 { margin: 5px 0; padding: 0 5px; font-size: 14px; color: #fff; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .xsummary-item > h4 > .ico { margin-right:5px; }
 .xsummary-item > div { font-size: 24px; color:#fff; }
 .xsummary-item.xcolor1 { background: #6391ed; }
@@ -589,6 +589,8 @@ table .ico { margin-left:5px; }
 
 /* 带边框行 */
 .row.xhasborder > div { border-bottom:1px dashed #cfd3d6; }
+.row.xcompare > div { padding:50px 30px; background:#fff; }
+.row.xcompare > div + div { border-left:1px solid #cbd8e4; }
 
 /* 热词 */
 .m-hots { font-size:16px; }
@@ -920,6 +922,22 @@ table .ico { margin-left:5px; }
 .u-search2 > a:hover { background:#3b79c7; }
 .u-search2 > a:after { content:" "; display:inline-block; width:0; height:100%; vertical-align:middle; }
 
+/* 无数据 */
+.m-nodata { height:360px; background:#fff; text-align:center; white-space:nowrap; }
+.m-nodata:after { content: " "; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+.nodata-inner { display:inline-block; vertical-align:middle; }
+.nodata-inner > img { margin-bottom:15px; }
+.nodata-inner > p { font-size:16px; color:#808080; }
+.nodata-inner > div { padding-top:15px; margin-bottom:10px; font-size:18px; }
+.nodata-inner > a { font-size:16px; font-weight:bold; color:#3679cf; }
+.nodata-inner > a:hover { text-decoration:underline; }
+
+.m-nodata.xlarge { height:600px; }
+
+.ico-al,
+.ico-ar { opacity:.8; }
+.ico-al:hover,
+.ico-ar:hover { opacity:1; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
@@ -954,7 +972,7 @@ table .ico { margin-left:5px; }
 .m-addrlist > li > label { line-height:20px; }
 .m-addrlist > li > label input { margin-right:8px; }
 .m-addrlist > li > label,
-.m-addrlist > li > .m-addr { padding:0 5px; margin:5px; }
+.m-addrlist > li > .m-addr { padding:0 15px 0 5px; margin:5px; }
 
 .m-form .m-addrlist { margin-top:0; padding:10px; border:1px solid #b2c1d0; }
 .m-form .m-addrlist > li { padding:5px 0; border:none; }

@@ -5,7 +5,7 @@ body { position: relative; min-height: 100%; min-width: 1000px; font-size: 14px;
 body:after { display: block; content: " "; height: 80px; width: 100%; }
 a { color:inherit; cursor:pointer; }
 a:hover,
-a:focus { text-decoration: none; }
+a:focus { color:#028872; text-decoration: none; }
 input[type="text"]:focus,
 input[type="password"]:focus { outline:none; }
 ul, li,dl,dt,dd,h1,h2,h3,h4,h5,h6,label { margin:0; padding:0; }

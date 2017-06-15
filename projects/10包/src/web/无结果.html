@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"无数据"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var1":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="m-nodata">
+            <div class="nodata-inner">
+                <img src="../static/images/noresult.png" />
+                <p>搜索无结果</p>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

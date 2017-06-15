@@ -19,7 +19,7 @@
 .g-header.xstart .header-logo { font-size:16px; color:#999; }
 
 /* 导航 */
-.g-nav { position:relative; z-index:1; margin-bottom:20px; background: #3e5d7d; }
+.g-nav { position:relative; z-index:10; margin-bottom:20px; background: #3e5d7d; }
 .nav-body { white-space:nowrap; }
 .nav-body > li { position: relative; display: inline-block; vertical-align:top; }
 .nav-body > li:hover,
@@ -106,7 +106,7 @@
 .u-link > span { display:inline-block; max-height:40px; line-height:20px; vertical-align:middle; overflow:hidden; white-space:normal; }
 .u-link.xlarge { height:70px; font-size:16px; }
 .u-link.xlarge > span { max-height:44px; line-height:22px; }
-.u-link:hover { color:#2dc690; border-color:#33c38e; }
+.u-link:hover { background-color:#4586d8; color:#fff; border-color:#4586d8; }
 .u-link.xhuge { height:80px; font-size:16px; color:#fff; }
 .u-link.xhuge var { display:block; font-style:normal; font-size:14px; }
 .u-link.xhuge:hover { color:#fff; border-color:transparent; }
@@ -271,7 +271,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-txttab { margin-bottom:20px; text-align:center; }
 .m-txttab > a { font-size:16px; color: #808080; }
 .m-txttab > a:hover,
-.m-txttab > a.active { color: #387fd8; }
+.m-txttab > a.active { color: #00a187; font-weight:bold; }
 .m-txttab > a + a:before { content:"/"; margin:0 10px; font-weight:bold; color:#808080; }
 .m-win .m-txttab { margin-top:20px; }
 
@@ -533,6 +533,11 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-cells.xnew .xnew-left > .ico { right:0; }
 .m-cells.xnew .xnew-right > .ico { left:0; }
 
+.ico-al,
+.ico-ar { opacity:.8; }
+.ico-al:hover,
+.ico-ar:hover { opacity:1; }
+
 
 /* 图表容器 */
 .u-contitle { margin:0 0 10px;  font-size:18px; text-align:center; }
@@ -557,6 +562,7 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-sorttable.xbb th,
 .m-sorttable.xbb td { padding:10px 6px; border-bottom:1px dashed #cbd8e4; vertical-align:top; }
 .m-sorttable.xbb td > div { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.m-sorttable.xbb td > div:first-child { font-size:14px; }
 .m-sorttable.xbb td:last-child { text-align:right; }
 
 table th.xsort { cursor:pointer; }
@@ -787,6 +793,19 @@ table .ico { margin-left:5px; }
 .remark-avatar { position:absolute; left:0; top:20px; }
 .remark-avatar > img { width:60px; height:60px; border:1px solid #ccc; border-radius:50%; }
 .remark-time { color:#999; }
+
+/* 无数据 */
+.m-nodata { height:360px; background:#fff; text-align:center; white-space:nowrap; }
+.m-nodata:after { content: " "; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+.nodata-inner { display:inline-block; vertical-align:middle; }
+.nodata-inner > img { margin-bottom:15px; }
+.nodata-inner > p { font-size:16px; color:#808080; }
+.nodata-inner > div { padding-top:15px; margin-bottom:10px; font-size:18px; }
+.nodata-inner > a { font-size:16px; font-weight:bold; color:#3679cf; }
+.nodata-inner > a:hover { text-decoration:underline; }
+
+.m-nodata.xlarge { height:600px; }
+
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */

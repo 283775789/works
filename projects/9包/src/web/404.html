@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"404"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var1":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="m-nodata xlarge">
+            <div class="nodata-inner">
+                <img src="../static/images/404.png" />
+                <div>很抱歉，你访问的页面不存在</div>
+                <a>返回上一页</a>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>
