@@ -23,36 +23,66 @@
                 <div class="cells-col" style="width:60%;">
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab1">
+                            <div class="t-lightgray" style="margin-bottom:15px;">当前是智能模式（可设置50个字）</div>
+                            <div class="m-form xbd">
+                                <div>
+                                    <label style="width:6em;">方案名：</label>
+                                    <div>
+                                        <input type="text" placeholder="请输入系列名称" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="width:6em;">时间范围：</label>
+                                    <div>
+                                        <input class="w-form6" type="text" />
+                                    </div>
+                                </div>
+                            </div>
                             <div class="m-form xgray xfull">
                                 <div>
-                                    <label style="width:10em;">重大报道名称：</label>
-                                    <div><input type="text" /></div>
+                                    <label style="width:6em;">关键词：</label>
+                                    <div>
+                                        <textarea style="height:150px;" placeholder="词语之间用空格隔开"></textarea>
+                                        <p class="text-right t-lightgray">（总字数不超过50个，已输入0个字，还可以输入50个字）</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>排除词：</label>
+                                    <div>
+                                        <textarea style="height:150px;" placeholder="词语之间用空格隔开"></textarea>
+                                        <p class="text-right t-lightgray">（总字数不超过50个，已输入0个字，还可以输入50个字）</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="m-form xbd">
                                 <div>
-                                    <label style="width:10em;">重大报道事件时间：</label>
+                                    <label style="width:6em;">新闻类别：</label>
                                     <div>
-                                        <div class="c-date"><input class="js-datepicker" type="text"></div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <label style="width:7em;">重大报道推荐时间：</label>
-                                    <div>
-                                        <div class="c-date"><input class="js-datepicker" type="text"></div>
+                                        <div class="m-checkbox">
+                                            <label><input type="checkbox" />全部</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技科技科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                            <label><input type="checkbox" />财经</label>
+                                            <label><input type="checkbox" />科技</label>
+                                            <label><input type="checkbox" />国内</label>
+                                            <label><input type="checkbox" />国际</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="m-form xgray xfull">
                                 <div>
-                                    <label style="width:10em;">备注信息：</label>
-                                    <div><textarea style="height:150px;"></textarea></div>
+                                    <label style="width:6em;">内容简介：</label>
+                                    <div>
+                                        <textarea style="height:150px;"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="text-center" style="margin:30px 0;">
-                                <a class="u-btn xprimary">保存</a>
-                                <a class="u-btn xlesser">取消</a>
                             </div>
                         </div>
 
@@ -107,6 +137,12 @@
                                             <label><input type="checkbox" />国内</label>
                                             <label><input type="checkbox" />国际</label>
                                         </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label style="width:6em;">内容简介：</label>
+                                    <div>
+                                        <textarea style="height:60px;"></textarea>
                                     </div>
                                 </div>
                                 <div>
@@ -673,6 +709,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="text-center" style="margin:30px 0;">
+                        <a class="u-btn xprimary">保存</a>
+                        <a class="u-btn xlesser">取消</a>
                     </div>
                 </div>
                 <div class="cells-col">

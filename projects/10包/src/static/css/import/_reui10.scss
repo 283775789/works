@@ -112,7 +112,7 @@
 .slider-handle { height:16px; width:16px; margin-left:-8px; margin-top:-5px; background:#fff; border:2px solid #6391ed; border-radius:8px; cursor:move; }
 
 /* 锚点 */
-.m-anchor { position:fixed; z-index:999; width:10%; left:0; top:400px; text-align:right; }
+.m-anchor { position:fixed; z-index:999; width:9%; left:0; top:400px; text-align:right; }
 .m-anchor:after { display: table; content: " "; clear: both; }
 .m-anchor .u-btn { display:block; float:right; width:104px; padding:0; margin:10px 0 0 !important; }
 .m-anchor .u-btn:hover,
@@ -124,8 +124,4 @@
 .m-anchor > li > a.active { background:#4586d8; color:#fff; }
 
 .m-anchor.xtabnav { top:140px; }
-
-
-
-
 

@@ -716,7 +716,7 @@ table .ico { margin-left:5px; }
 .m-filter2 > .u-btn { height:40px; line-height:38px; }
 .m-filter2 > label,
 .m-filter2 > select { margin:0; font-size:14px; border:1px solid #b4c1ca; }
-.m-filter2 > label { width:100px; }
+.m-filter2 > label { width:100px; font-size:14px; background:#eef4f7; color:#333; }
 .m-filter2 > select { padding-left:10px; margin-left:-1px; width:300px; }
 
 /* 过滤区3 */
@@ -801,7 +801,7 @@ table .ico { margin-left:5px; }
 .nodata-inner > img { margin-bottom:15px; }
 .nodata-inner > p { font-size:16px; color:#808080; }
 .nodata-inner > div { padding-top:15px; margin-bottom:10px; font-size:18px; }
-.nodata-inner > a { font-size:16px; font-weight:bold; color:#3679cf; }
+.nodata-inner > a { font-size:16px; font-weight:bold; color:#059c79; }
 .nodata-inner > a:hover { text-decoration:underline; }
 
 .m-nodata.xlarge { height:600px; }
@@ -818,8 +818,10 @@ table .ico { margin-left:5px; }
 .p-start .m-filter > li label { width:70px; }
 
 /* 分析页 */
-.p-analyse .container { position:relative; max-width:80%; }
-.p-analyse .g-header h2 { line-height:90px; font-size:24px; text-align:center; }
+.p-analyse .container { position:relative; padding:0; min-width:0; max-width:80%; }
+.p-analyse .g-header { margin-bottom:20px; line-height:60px; background:transparent; }
+.p-analyse .g-header .container { padding:0 20px; background:#fff; }
+.p-analyse .g-header h2 { clear:both; margin:10px 0 30px; font-size:24px; text-align:center; }
 .p-analyse .header-logo > img { height:30px;  }
 .p-analyse .ico-download { position:absolute; right:30px; top:30px; }
 .p-analyse .t-lightgray { max-width:60%; }
@@ -852,20 +854,11 @@ table .ico { margin-left:5px; }
 
 
 /* ------------------------------ 尺寸 ------------------------------ */
-.w-form1 { }
 .w-form2 { width:120px; }
 .w-form3 { width:150px; }
 .w-form4 { width:180px;  }
 .w-form5 { width: 240px; }
-.w-form6 { }
-.w-form7 { }
-.w-form8 { }
-.w-form9 { }
-.w-form10 { }
 .w-cell1 { width:50px; }
-.w-win1 { }
-.w-win2 { }
-.w-win3 { }
 .w-win4 { width:800px; }
-.w-win5 { }
 .h-box3 { height:300px; }
+.f-ws1 { word-spacing:.75em; }

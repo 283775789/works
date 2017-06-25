@@ -17,24 +17,23 @@
             <form>
                 <ul class="m-filter">
                     <li>
-                        <label>时间：</label>
                         <div class="filter-option">
+                            <label class="xlh">转载时间：</label>
                             <a class="selected">近三天</a>
                             <a>近七天</a>
+                            <div class="c-date"><input class="js-datepicker" type="text"></div>
+                            <span>至</span>
+                            <div class="c-date"><input class="js-datepicker" type="text"></div>
                         </div>
                     </li>
                     <li>
                         <div class="filter-option">
-                            <label>转载时间：</label>
-                            <select>
-                                <option>2017-02-23至2017-03-23</option>
-                            </select>
                             <label>媒体级别：</label>
-                            <select class="w-form3">
+                            <select style="width:130px;">
                                 <option>全部</option>
                             </select>
                             <label>关键词：</label>
-                            <input class="w-form5" type="text" placeholder="请输入搜索关键字" />
+                            <input style="width:290px;" type="text" placeholder="请输入搜索关键字" />
                             <button class="u-btn xprimary" type="submit">查看</button>
                         </div>
                     </li>
@@ -47,7 +46,7 @@
                         <tr>
                             <th style="width:80px;">排名</th>
                             <th>媒体名称</th>
-                            <th style="width:120px;">对比分析</th>
+                            <th style="width:120px;">转载数</th>
                         </tr>
                     </thead>
                     <tbody>
