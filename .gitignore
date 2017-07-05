@@ -6,3 +6,4 @@ projects/**/_sprite.scss
 projects/*/dist/
 node_modules/
 **/.vs/
+project_files/
