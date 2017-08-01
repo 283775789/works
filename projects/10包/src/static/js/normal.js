@@ -73,12 +73,22 @@ var webui = {
         var right = ($(window).width() - $('.g-body').width()) / 2-10;
         $affix.css('right', right);
     },
+    //初始化文件上传控件
+    initFileUpload: function ($fileControl) {
+        var $file = $fileControl.find('input[type="file"]'),
+            $input = $fileControl.prev();
+
+        $file.off('change.webui').on('change.webui', function () {
+            $input.val($(this).val());
+        });
+    },
     //函数:初始化所有控件
     init: function () {
         var $datePicker = $('.js-datepicker'),
             $monthPicker = $('.js-monthpicker'),
             $yearPicker = $('.js-yearpicker'),
-            $affix = $('.m-affix');
+            $affix = $('.m-affix'),
+            $fileControl = $('.u-file');
 
         if ($datePicker.length > 0) {
             webui.initDatePicker($datePicker);
@@ -98,6 +108,10 @@ var webui = {
             $(window).off('lazyResize.reui').on('lazyResize.reui', function () {
                 webui.initAffix($affix);
             });
+        }
+
+        if ($fileControl.length > 0) {
+            webui.initFileUpload($fileControl);
         }
     }
 }

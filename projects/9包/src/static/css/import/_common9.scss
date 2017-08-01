@@ -215,6 +215,17 @@ input[type="checkbox"] { width:15px; height:15px; }
 .filter-option > .u-btn { margin-right:0; }
 .filter-option > .u-btn.xlesser { background:#fff; }
 .filter-option .xws { word-spacing:.2em; }
+.filter-option-wrap { display:inline-block; }
+.filter-option-wrap :first-child { margin-left:10px; }
+@media (max-width:1199px){
+    .filter-option-wrap {
+        display:block;
+        margin-top:10px;
+    }
+    .filter-option-wrap :first-child { margin-left:0; }
+    .x-4em { width:4.2em; }
+}
+
 
 .m-filter.xsmb { margin-bottom:5px; }
 .m-filter li.xlarge { line-height:30px; }
@@ -580,6 +591,14 @@ table .ico { margin-left:5px; }
 .m-grid.xsmall { margin:-5px; }
 .m-grid.xsmall > li { padding:5px; }
 
+@media (max-width:1439px){
+    .m-grid.xcol6 > li { width:20%; padding:10px; }
+}
+
+@media (max-width:1199px){
+    .m-grid.xcol6 > li { width:25%; padding:10px; }
+}
+
 /* 图片盒子 */
 .m-imgbox { display:block; }
 .m-imgbox:after { content: " "; display: block; width: 0; height:0; font-size:0; clear:both; }
@@ -721,6 +740,10 @@ table .ico { margin-left:5px; }
 
 /* 过滤区3 */
 .m-filter3 { padding-bottom:20px; margin-bottom:10px; border-bottom:1px dashed #c9d9e6; white-space:nowrap; }
+
+@media (max-width:1199px){
+    .m-filter3 .w-form5 { width:150px; }
+}
 
 /* 图书列表 */
 .m-booklist  { margin-top:-15px; }

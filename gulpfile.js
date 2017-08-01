@@ -134,6 +134,7 @@ var tasks = {
 // 函数:错误处理
 // ------------------------------
 var errorHandler = function (error) {
+    console.log(error);
     this.emit('end');
 };
 

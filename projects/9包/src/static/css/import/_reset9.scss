@@ -27,10 +27,6 @@ input:-ms-input-placeholder { color: #999; }
     .container { width: 1410px; }
 }
 
-@media (min-width: 1680px) {
-    .container { width: 1600px; }
-}
-
 .collapsing { transition-duration:0s; }
 
 .icon-arrow-left:before { content: "\e091"; }

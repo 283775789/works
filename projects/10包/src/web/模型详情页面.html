@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"采集分析"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var9":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box hasfixer">
+            <div class="m-title">
+                <h4>重大报道模型</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-bgcon">
+                <h4>重大报道模型（V1.0）：</h4>
+                <div>是指突然发生，造成或者可能造成严重社会危害，需要采取应急处置措施予以应对的自然灾害，事故灾害，公共卫生事件和社会安全事件。</div>
+                <div>-可预见：重大节日。比赛等</div>
+                <div>-不可预见：突发事件、自然灾害等</div>
+            </div>
+
+            <div class="m-subtitle xnomal">
+                <span>计算公式</span>
+            </div>
+
+            <div class="m-bgcon xcolor2">
+                <div>关键字+热度指数+时间范围</div>
+            </div>
+
+            <div class="m-subtitle xnomal">
+                <span>指标配置管理</span>
+            </div>
+
+            <div class="m-bgcon xcolor2">
+                <h5>关键词：</h5>
+                <div class="m-tagbox">
+                    <a class="u-tag2 selected">地震<i class="ico ico-del"></i></a>
+                    <a class="u-tag2 selected">火灾<i class="ico ico-del"></i></a>
+                    <a class="u-tag2 selected">泥石流<i class="ico ico-del"></i></a>
+                    <a class="ico ico-add3"></a>
+                </div>
+                <h5>热度指数：</h5>
+                <h6>热度范围：</h6>
+                <div class="m-tagbox">
+                    <a class="u-tag2 selected">>9</a>
+                    <a class="u-tag2 selected">5-9</a>
+                    <a class="u-tag2 selected">3-5</a>
+                    <a class="u-tag2 selected">自定义</a>
+                </div>
+                <h6>时间范围：</h6>
+                <div class="m-tagbox">
+                    <a class="u-tag2 selected">>日</a>
+                    <a class="u-tag2 selected">周</a>
+                    <a class="u-tag2 selected">月</a>
+                    <a class="u-tag2 selected">年</a>
+                    <a class="u-tag2 selected">自定义</a>
+                </div>
+            </div>
+
+            <div class="m-fixer xnb jsx-fixer" data-position="bottom">
+                <a class="u-btn xprimary">保存</a>
+                <a class="u-btn xlesser">取消</a>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>
