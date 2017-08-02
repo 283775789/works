@@ -1070,6 +1070,20 @@ table .ico { margin-left:5px; }
 .m-form .m-addrlist { margin-top:0; padding:10px; border:1px solid #b2c1d0; }
 .m-form .m-addrlist > li { padding:5px 0; border:none; }
 
+/* 选择弹窗 */
+.m-winselect { width:910px; }
+.m-winselect .m-bgcon { margin-bottom:30px; }
+.m-winselect .m-bgcon:after { display: table; content: " "; clear: both; }
+.m-winselect .m-bgcon > h5 { float:left; margin:0; line-height:40px; }
+.m-winselect .m-bgcon > .m-tagbox { margin-bottom:0; display:table-cell; width:1000px; }
+.m-winselect .m-bgcon .u-tag2 { min-width:90px; width:auto; }
+.m-winselect .u-search { margin-top:20px; }
+
+.winselect-option { height:360px; overflow:auto; }
+.winselect-option h3 { margin:20px 0 -5px; font-size:14px; }
+.winselect-option .u-tag2 { margin: 20px 15px 0 0; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
 /* 分析页 */
 .p-analyse .container { position:relative; padding:0; min-width:0; width:80%; }
 .p-analyse .g-header { line-height:60px; background:transparent; }
