@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"无数据"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var1":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box xlfp">
+            <div class="m-tablebox">
+                <table class="m-table xcutoff">
+                    <thead>
+                        <tr>
+                            <th class="xcheck"><input type="checkbox" /></th>
+                            <th>机构名称</th>
+                            <th style="width:12%;">机构编码</th>
+                            <th style="width:12%;">微博帐号</th>
+                            <th style="width:12%;">微信帐号</th>
+                            <th style="width:15%;">门户网站</th>
+                            <th style="width:12%;">上级机构</th>
+                            <th style="width:12%;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="8">
+                                <div class="m-reload"><img src="../static/images/reload.gif" /></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+</body>
+</html>

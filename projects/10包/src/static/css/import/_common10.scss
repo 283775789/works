@@ -1011,6 +1011,10 @@ table .ico { margin-left:5px; }
 
 .m-bgcon.xcolor2 { background:#eef4f7; color:#333; }
 
+/* 加载动画 */
+.m-reload { height:200px; white-space:nowrap; text-align:center; }
+.m-reload:after { content:" "; display:inline-block; width:0; height:100%; vertical-align:middle; }
+
 /* 色块 */
 .m-cb { display:block; height:90px; margin-bottom:20px; white-space:nowrap; font-size:0; text-align:center; border-radius:5px; }
 .m-cb:after { content: " "; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
