@@ -1111,7 +1111,7 @@ table .ico { margin-left:5px; }
 .login-inner:after { content: " "; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
 .login-box { display:inline-block; width:616px; height:634px; padding-top:125px; background:url(../images/login_bg.png) no-repeat; text-align:center; vertical-align:middle; }
 .login-logo { display:inline-block; margin-bottom:40px; text-align:left; }
-.login-logo > img { padding-right:15px; margin-right:15px; border-right:1px solid #dae7f7; vertical-align:top; }
+.login-logo > img { padding-right:15px; vertical-align:top; }
 .login-logo-right { display:inline-block; color:#3679cf; font-weight:bold; vertical-align:top; }
 .login-logo-right > h3 { font-size:24px; font-weight:bold; }
 .login-logo-right > h4 { font-size:20px; font-weight:bold; }

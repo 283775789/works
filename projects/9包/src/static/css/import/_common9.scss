@@ -830,6 +830,11 @@ table .ico { margin-left:5px; }
 .m-nodata.xlarge { height:600px; }
 
 
+/*升缩文本*/
+.u-rstext-switch { margin-left:5px; color:#808080; cursor:pointer; }
+.u-rstext-switch:hover { color:#00a187; }
+.u-rstext-switch span { padding-left:5px; font-size:12px; font-family:"\5b8b\4f53";}
+
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
 .p-start h2 { font-size:24px; margin:35px 0 25px; text-align:center; }
