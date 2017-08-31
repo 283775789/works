@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+@@include('include/_head.html',{"title":"第三方数据导入"})
+<body>
+    @@include('include/_header.html')
+    @@include('include/_nav.html',{"var8":"class=\"active\""})
+    <!-- 主体 -->
+    <div class="container g-body">
+        <div class="g-box">
+            <div class="m-title">
+                <h4>系统管理</h4>
+                <div class="title-right">
+                    <a class="u-btn xlesser">新增配置项</a>
+                    <a class="u-btn xlesser">返回</a>
+                </div>
+            </div>
+
+            <div class="m-bgcon xlh">
+                <b>转载分析模型（V1.0）：</b>
+                <div>是指在非原作品发表网站，重新发表该作品，但前提是标明并非再次发表者原创。</div>
+                <div>-标明转载来源：明确标明被转载作品的作者和最初登载的报刊出处的。</div>
+                <div>-未标明转载来源：转载未注明被转载作品的作者和最初登载的报刊出处的。</div>
+            </div>
+
+            <div class="m-subtitle">
+                <span>计算公式</span>
+            </div>
+
+            <div class="m-bgcon xlh">
+                { 热点新闻系数+新闻类别系数+头条新闻系数+用户行为系数（阅读量+评论量+转发量+反对量+点赞量）} x exp { -（冷却系数）x 间隔时间 }
+            </div>
+
+
+            <div class="m-subtitle">
+                <span>指标配置管理</span>
+            </div>
+
+            <div class="m-panel">
+                <div class="panel-header">
+                    1.热点新闻系数：<input class="w-form1" type="text" />&nbsp;%&nbsp;
+                    <a class="ico ico-question" data-toggle="tooltip" data-placement="right" title="提示信息"></a>
+                </div>
+            </div>
+
+            <div class="m-panel">
+                <div class="panel-header">
+                    2.新闻类别系数：<input class="w-form1" type="text" />&nbsp;%&nbsp;
+                    <a class="ico ico-question" data-toggle="tooltip" data-placement="right" title="提示信息"></a>
+                </div>
+                <div class="panel-body">
+                    <div class="m-form xfull">
+                        <div>
+                            <label style="width:6em;">1) 时政：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">2) 法治：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">3) 军事：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">4) 社会：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label style="width:6em;">5) 财经：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">6) 教育：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">7) 科技：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                            <label style="width:12em;">8) 文娱：</label>
+                            <div>
+                                <select>
+                                    <option>1.0</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-panel">
+                <div class="panel-header">
+                    3.头条新闻系数：<input class="w-form1" type="text" />&nbsp;%&nbsp;
+                    <a class="ico ico-question" data-toggle="tooltip" data-placement="right" title="提示信息"></a>
+                </div>
+            </div>
+
+            <div class="m-panel">
+                <div class="panel-header">
+                    4.用户行为系数：<input class="w-form1" type="text" />&nbsp;%&nbsp;
+                    <a class="ico ico-question" data-toggle="tooltip" data-placement="right" title="提示信息"></a>
+                </div>
+                <div class="panel-body">
+                    <div class="m-note">用户行为系数=评论量+转发量+反对量+点赞量</div>
+                    <div class="m-form xfull">
+                        <div>
+                            <label style="width:6em;">1) 阅读量：</label>
+                            <div>
+                                <select>
+                                    <option>x1</option>
+                                </select>
+                            </div>
+                            <label style="width:8em;">2) 评论量：</label>
+                            <div>
+                                <select>
+                                    <option>x1</option>
+                                </select>
+                            </div>
+                            <label style="width:8em;">3) 转发量：</label>
+                            <div>
+                                <select>
+                                    <option>x5</option>
+                                </select>
+                            </div>
+                            <label style="width:8em;">4) 反对量：</label>
+                            <div>
+                                <select>
+                                    <option>x1</option>
+                                </select>
+                            </div><label style="width:8em;">4) 点赞量：</label>
+                            <div>
+                                <select>
+                                    <option>x2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-form xfull" style="width:563px;">
+                        <div>
+                            <label style="text-align:left; width:220px;">&nbsp;0≤用户反馈量在线统计≤5000</label>
+                            <label style="width:200px;">用户反馈量预估最大值:</label>
+                            <div>
+                                <input class="w-form1" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-panel" style="margin-top:-10px;">
+                <div class="panel-body">
+                    <div class="m-note">单篇新闻影响力系数=In（转发量+1）+In（评论量+1）+In（点赞量+1）+In（阅读量+1）</div>
+                    <div class="m-form xfull">
+                        <div>
+                            <label style="width:6em;">1) 转发数：</label>
+                            <div>
+                                <input class="w-form1" type="text" />&nbsp;%
+                            </div>
+                            <label style="width:6em;">2) 评论数：</label>
+                            <div>
+                                <input class="w-form1" type="text" />&nbsp;%
+                            </div>
+                            <label style="width:6em;">3) 点赞数：</label>
+                            <div>
+                                <input class="w-form1" type="text" />&nbsp;%
+                            </div>
+                            <label style="width:6em;">4) 阅读数：</label>
+                            <div>
+                                <input class="w-form1" type="text" />&nbsp;%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-panel">
+                <div class="panel-header">
+                    5.冷却系数：：<input class="w-form1" type="text" />&nbsp;%&nbsp;
+                    <a class="ico ico-question" data-toggle="tooltip" data-placement="right" title="提示信息"></a>
+                </div>
+                <div class="panel-body">
+                    <div class="m-note">本期冷却系数=上一期得分x  exp（-（冷却系数）x 间隔时间）</div>
+                    <div style="margin:10px 0;">
+                        <label>新闻热度冷却时间:</label>
+                        <input class="w-form1" type="text" />
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;*建议1~31天</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-btnsarea">
+            <a class="u-btn xprimary">保存</a>
+            <a class="u-btn xlesser js-btn1">恢复默认</a>
+        </div>
+    </div>
+    <!-- /主体 -->
+    @@include('include/_footer.html')
+    @@include('include/_script.html')
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>

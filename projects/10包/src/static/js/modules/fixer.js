@@ -78,7 +78,7 @@
         var position = $me.data('position');
 
         if (position != 'bottom') {
-            if (scrollTop >= top) {
+          if (scrollTop + $me.height() >= top) {
                 $me.css({ left: matrix.left, width: matrix.width, position: 'fixed', top: 0 });
                 $me.data('fix', true);
             } else {

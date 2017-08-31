@@ -1008,6 +1008,8 @@ table .ico { margin-left:5px; }
 .m-bgcon > h4 { margin-bottom:10px; font-size:16px; font-weight:bold; }
 .m-bgcon > h5 { font-size:14px; font-weight:bold; margin-bottom:10px; }
 .m-bgcon > h6 { font-size:14px; margin-bottom:6px; }
+.m-bgcon.xlh { line-height:1.75; margin-bottom:30px; }
+
 
 .m-bgcon.xcolor2 { background:#eef4f7; color:#333; }
 
@@ -1016,21 +1018,33 @@ table .ico { margin-left:5px; }
 .m-reload:after { content:" "; display:inline-block; width:0; height:100%; vertical-align:middle; }
 
 /* 色块 */
-.m-cb { display:block; height:90px; margin-bottom:20px; white-space:nowrap; font-size:0; text-align:center; border-radius:5px; }
+.m-cb { display:block; height:90px; margin-bottom:20px; white-space:nowrap; font-size:0; text-align:center; border-radius:5px; cursor:pointer; }
 .m-cb:after { content: " "; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
 .cb-inner { display:inline-block; font-size:18px; color:#fff; vertical-align:middle; white-space:normal; }
 
 .m-cb.xcolor1 { background:#6392ec; }
+.m-cb.xcolor1:hover { background:#4f7fde; }
 .m-cb.xcolor2 { background:#14cdae; }
 .m-cb.xcolor3 { background:#fe8978; }
 .m-cb.xcolor4 { background:#ffc643; }
 .m-cb.xcolor5 { background:#ff7994; }
 .m-cb.xcolor6 { background:#ffa545; }
+.m-cb.xcolor6:hover { background:#f08e2c; }
 .m-cb.xcolor7 { background:#57cc59; }
 .m-cb.xcolor8 { background:#459dff; }
 .m-cb.xcolor9 { background:#02c8ef; }
 .m-cb.xcolor10 { background:#8ed547; }
 .m-cb.xcolor11 { background:#80a1c2; }
+
+/* 面板 */
+.m-panel { margin-bottom:30px; font-size:16px; }
+.panel-header { height:50px; line-height:50px; padding:0 30px; background:#e6f0f5; }
+.panel-header input { text-align:center; }
+.panel-body { padding:30px 30px 10px; background:#f2f7fa; }
+.panel-body label { color:#808080 !important; }
+
+/* 说明 */
+.m-note { line-height:15px; padding-left:5px; margin-bottom:15px; font-size:14px; border-left:3px solid #4586d8; }
 
 /* ------------------------------ 具体页面 ------------------------------ */
 /* 初始页 */
@@ -1130,7 +1144,7 @@ table .ico { margin-left:5px; }
 .p-login .u-btn { width:100%; line-height:40px; margin-top:10px; font-size:18px; }
 
 /* ------------------------------ 尺寸 ------------------------------ */
-.w-form1 { }
+.w-form1 { width:90px !important; }
 .w-form2 { width:120px; }
 .w-form3 { width:150px; }
 .w-form4 { width:180px;  }
