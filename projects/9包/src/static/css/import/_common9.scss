@@ -70,6 +70,8 @@
 .t-dark { color:#333; }
 .t-red { color:#f00; }
 .t-hot { display:inline-block; margin-left:5px; color:#ff523c; vertical-align:middle; }
+.t-link { color:#00a187; }
+.t-link:hover { text-decoration:underline; }
 
 /* ------------------------------ 元件 ------------------------------ */
 /* 按钮 */
@@ -297,6 +299,9 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-dashtab > a.active { color: #00a187; border-bottom-color:#00b89a; }
 .m-dashtab > a + a { margin-left:30px; }
 
+.m-dashtab.xsmall > a { font-size:14px; }
+.m-dashtab.xsmall > a + a { margin-left:10px; }
+
 .m-title + .m-dashtab { margin-top:-15px; }
 
 /* 表单 */
@@ -320,6 +325,10 @@ input[type="checkbox"] { width:15px; height:15px; }
 .m-form .xerror { border-color:#f00; }
 .m-form .form-error { color:#fc4646; }
 .m-form .form-error > .ico { margin-right:5px; }
+.m-form .t-link { margin-left:20px; line-height:36px; }
+
+.m-form > div.xsp > label,
+.m-form > div.xsp > div { padding-bottom:10px; }
 
 /* 表单：扩展 */
 .m-formbox { margin-bottom: 30px; background: #eef4f7; padding: 20px; }
@@ -739,7 +748,7 @@ table .ico { margin-left:5px; }
 .m-filter2 > select { padding-left:10px; margin-left:-1px; width:300px; }
 
 /* 过滤区3 */
-.m-filter3 { padding-bottom:20px; margin-bottom:10px; border-bottom:1px dashed #c9d9e6; white-space:nowrap; }
+.m-filter3 { margin-bottom:10px; white-space:nowrap; }
 
 @media (max-width:1199px){
     .m-filter3 .w-form5 { width:150px; }
